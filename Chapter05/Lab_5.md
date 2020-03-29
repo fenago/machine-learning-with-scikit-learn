@@ -1,5 +1,5 @@
 
-Chapter 5. Predicting Numeric Outcomes with Linear Regression {.title}
+Chapter 5. Predicting Numeric Outcomes with Linear Regression
 -------------------------------------------------------------
 
 graph\_from\_dot\_data() function on the Linear regression is used to
@@ -32,7 +32,7 @@ s
 -   Optimizing your linear regression model
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -51,7 +51,7 @@ Check out the following video to see the code in action:
 
 
 
-The inner mechanics of the linear regression algorithm {.title style="clear: both"}
+The inner mechanics of the linear regression algorithm
 ------------------------------------------------------
 
 * * * * *
@@ -112,7 +112,7 @@ points, and the features can be defined as follows:
 
 
 
-Implementing linear regression in scikit-learn {.title style="clear: both"}
+Implementing linear regression in scikit-learn
 ----------------------------------------------
 
 * * * * *
@@ -128,7 +128,7 @@ following topics:
     amount 
 -   Scaling your data for a potential increase in performance 
 
-### Linear regression in two dimensions  {.title}
+### Linear regression in two dimensions 
 
 In this subsection, you will learn how to implement your first linear
 regression algorithm, in order to predict the amount of a mobile
@@ -243,7 +243,7 @@ Finally, we create a scatter plot between the feature and the target
 variable and include the line of best fit with the color red, as
 indicated in the preceding diagram.
 
-### Using linear regression to predict mobile transaction amount {.title}
+### Using linear regression to predict mobile transaction amount
 
 Now that we have visualized how a simple linear regression model works
 in two dimensions, we can use the linear regression algorithm to predict
@@ -299,7 +299,7 @@ the `.fit()`{.literal}* *function. Then, we evaluate the accuracy score
 on the test data by using the `.score()`{.literal}* *function. This
 results in an accuracy score of 98%, which is fantastic!
 
-### Scaling your data {.title}
+### Scaling your data
 
 Scaling your data and providing a level of standardization is a vital
 step in any linear regression pipeline, as it could offer a way to
@@ -340,7 +340,7 @@ scores in most cases.
 
 
 
-Model optimization  {.title style="clear: both"}
+Model optimization 
 -------------------
 
 * * * * *
@@ -369,7 +369,7 @@ In the following subsections, the two types of regularization techniques
 will be discussed in detail, and you will learn about how you can
 implement them into your model. 
 
-### Ridge regression {.title}
+### Ridge regression
 
 The equation for ridge regression is as follows:
 
@@ -542,7 +542,7 @@ plot. 
 
  
 
-### Lasso regression {.title}
+### Lasso regression
 
 The equation for lasso regression is as follows:
 
@@ -700,7 +700,7 @@ accuracy scores, and we can thus pick the value given to us by the
 
 
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

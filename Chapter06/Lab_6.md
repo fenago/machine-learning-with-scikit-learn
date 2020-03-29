@@ -1,5 +1,5 @@
 
-Chapter 6. Classification and Regression with Trees {.title}
+Chapter 6. Classification and Regression with Trees
 ---------------------------------------------------
 
 Tree based algorithms are very popular for two reasons: they are
@@ -25,7 +25,7 @@ several algorithms into an **ensemble** and have them vote on what the
 best prediction is.
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -45,7 +45,7 @@ Check out the following video to see the code in action:
 
 
 
-Classification trees {.title style="clear: both"}
+Classification trees
 --------------------
 
 * * * * *
@@ -66,7 +66,7 @@ In this section, you will learn how each of these tree based algorithms
 works, in order to classify a row of data as a particular class or
 category.
 
-### The decision tree classifier {.title}
+### The decision tree classifier
 
 The decision tree is the simplest tree based algorithm, and serves as
 the foundation for the other two algorithms. Let's consider the
@@ -98,7 +98,7 @@ preceding tree, the **children** are also the **leaf** nodes. The
 tree. As you might have guessed, the decision tree represents a regular
 tree, but inverted, or upside down.
 
-#### Picking the best feature {.title}
+#### Picking the best feature
 
 How does the decision tree decide which feature is the best? The best
 feature is one that offers the best possible split, and divides the tree
@@ -140,7 +140,7 @@ In the preceding diagram, the following happens:
     cannot come to a conclusive decision, unless it relies on more
     features, which then increases the complexity of the tree.
 
-#### The Gini coefficient {.title}
+#### The Gini coefficient
 
 The metric that the decision tree uses to decide if the root node is
 called the *Gini coefficient*. The higher the value of this coefficient,
@@ -175,7 +175,7 @@ coefficient for that attribute. It does this until it finds the
 attribute that best splits the data in a node into groups that have
 distinct classes and categories.
 
-#### Implementing the decision tree classifier in scikit-learn {.title}
+#### Implementing the decision tree classifier in scikit-learn
 
 In this section, you will learn how to implement the decision tree
 classifier in scikit-learn. We will work with the same fraud detection
@@ -249,7 +249,7 @@ In the preceding code, we do the following:
 3.  Finally, we fit the model on the training data and evaluate its
     accuracy on the test data.
 
-#### Hyperparameter tuning for the decision tree {.title}
+#### Hyperparameter tuning for the decision tree
 
 The decision tree has a plethora of hyperparameters that require
 fine-tuning in order to derive the best possible model that reduces the
@@ -336,7 +336,7 @@ Copy
 grid_object.best_params_
 ```
 
-#### Visualizing the decision tree {.title}
+#### Visualizing the decision tree
 
 One of the best aspects of building and implementing a decision tree in
 order to solve problems is that it can be interpreted quite easily,
@@ -481,7 +481,7 @@ In the preceding diagram, note the following:
 Note how the decision tree is simply a set of If-then rules, constructed
 in a nested manner.
 
-### The random forests classifier {.title}
+### The random forests classifier
 
 Now that you understand the core principles of the decision tree at a
 very foundational level, we will next explore what random forests are.
@@ -535,7 +535,7 @@ In the preceding diagram, the following occurs:
 Now that you have learned how the algorithm works internally, we can
 implement it using scikit-learn!
 
-#### Implementing the random forest classifier in scikit-learn {.title}
+#### Implementing the random forest classifier in scikit-learn
 
 In this section, we will implement the random forest classifier in
 scikit-learn. The first step is to read in the data, and split it into
@@ -591,7 +591,7 @@ In the preceding code block, we do the following:
 3.  We then fit this model to our training data, and evaluate its
     accuracy on the test data.
 
-#### Hyperparameter tuning for random forest algorithms {.title}
+#### Hyperparameter tuning for random forest algorithms
 
 In this section, we will learn how to optimize the hyperparameters of
 the random forest algorithm. Since random forests are fundamentally
@@ -642,7 +642,7 @@ In the preceding code block, we do the following:
 5.  The best model is then extracted using these optimal
     hyperparameters.
 
-### The AdaBoost classifier {.title}
+### The AdaBoost classifier
 
 In the section, you will learn how the AdaBoost classifier works
 internally, and how the concept of boosting might be used to give you
@@ -678,7 +678,7 @@ happens:
     weighted vote is initiated in order to determine the final
     prediction.
 
-#### Implementing the AdaBoost classifier in scikit-learn {.title}
+#### Implementing the AdaBoost classifier in scikit-learn
 
 In this section, we will learn how we can implement the AdaBoost
 classifier in scikit-learn in order to predict if a transaction is
@@ -743,7 +743,7 @@ In the preceding code block, we do the following:
 4.  Finally, we fit the classifier to the training data, and extract the
     accuracy scores from the test data.
 
-#### Hyperparameter tuning for the AdaBoost classifier {.title}
+#### Hyperparameter tuning for the AdaBoost classifier
 
 In this section, we will learn how to tune the hyperparameters of the
 AdaBoost classifier. The AdaBoost classifier has only one parameter of
@@ -792,7 +792,7 @@ In the preceding code, we do the following:
 
 
 
-Regression trees {.title style="clear: both"}
+Regression trees
 ----------------
 
 * * * * *
@@ -808,7 +808,7 @@ outcomes, instead of classes:
 -   The random forest regressor
 -   The gradient boosted tree
 
-### The decision tree regressor {.title}
+### The decision tree regressor
 
 When we have data that is non-linear in nature, a linear regression
 model might not be the best model to choose. In such situations, it
@@ -852,7 +852,7 @@ following:
 
  
 
-#### Implementing the decision tree regressor in scikit-learn {.title}
+#### Implementing the decision tree regressor in scikit-learn
 
 In this section, you will learn how to implement the decision tree
 regressor in scikit-learn. The first step is to import the data, and
@@ -922,7 +922,7 @@ In the preceding code, we do the following:
     is built every time we run the code.
 5.  We then fit the tree to the training data.
 
-#### Visualizing the decision tree regressor {.title}
+#### Visualizing the decision tree regressor
 
 Just as we visualized the decision tree classifier, we can also
 visualize the decision tree regressor. Instead of showing you the
@@ -966,7 +966,7 @@ decision tree regressor like that in the following diagram:
 
 A visualization of the decision tree regressor
 
-### The random forest regressor {.title}
+### The random forest regressor
 
 The random forest regressor takes the decision tree regressor as the
 base estimator, and makes predictions in a method similar to that of the
@@ -980,7 +980,7 @@ The only difference between the random forest classifier and the random
 forest regressor is the fact that, in the case of the latter, the base
 estimator is a decision tree regressor.
 
-#### Implementing the random forest regressor in scikit-learn {.title}
+#### Implementing the random forest regressor in scikit-learn
 
 In this section, you will learn how you can implement the random forest
 regressor in scikit-learn. The first step is to import the data and
@@ -1042,7 +1042,7 @@ In the preceding code, we do the following:
     of the total data.
 3.  We then fit the tree to the training set.
 
-### The gradient boosted tree {.title}
+### The gradient boosted tree
 
 In this section, you will learn how the gradient boosted tree is used
 for regression, and how you can implement this using scikit-learn.
@@ -1080,7 +1080,7 @@ Here is what occurs in the preceding diagram:
     algorithm will learn more slowly, and thus requires fewer trees in
     order to reduce the computational time.
 
-#### Implementing the gradient boosted tree in scikit-learn {.title}
+#### Implementing the gradient boosted tree in scikit-learn
 
 In this section, we will learn how we can implement the gradient boosted
 regressor in scikit-learn. The first step, as usual, is to import the
@@ -1139,7 +1139,7 @@ In the preceding code, we do the following:
 
 
 
-Ensemble classifier {.title style="clear: both"}
+Ensemble classifier
 -------------------
 
 * * * * *
@@ -1169,7 +1169,7 @@ When examining the preceding diagram, note the following:
     majority) of the predictions are **Not Fraud**, and hence, outputs
     the final prediction as **Not Fraud**.
 
-### Implementing the voting classifier in scikit-learn {.title}
+### Implementing the voting classifier in scikit-learn
 
 In this section, you will learn how to implement the voting classifier
 in scikit-learn. The first step is to import the data, create the
@@ -1261,7 +1261,7 @@ In the preceding code, we do the following:
 
 
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

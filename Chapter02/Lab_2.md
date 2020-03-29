@@ -1,6 +1,6 @@
 
 
-Chapter 2. Predicting Categories with K-Nearest Neighbors {.title}
+Chapter 2. Predicting Categories with K-Nearest Neighbors
 ---------------------------------------------------------
 
 The **k-Nearest Neighbors** (**k-NN**) algorithm is a form of supervised
@@ -31,7 +31,7 @@ at:[ https://jupyter.org/install.html](https://jupyter.org/install.html).
 Alternatively, you can also work with the Jupyter Notebook in the
 browser by using: [https://jupyter.org/try](https://jupyter.org/try).
 
-### Note {.title}
+### Note
 
 Each chapter in this book comes with a pipeline that is implemented in a
 Jupyter Notebook on the official GitHub repository of this book, and as
@@ -39,7 +39,7 @@ such, it is highly recommended that you install Jupyter Notebook on your
 local machine.
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -58,7 +58,7 @@ Check out the following video to see the code in action:
 
 
 
-Preparing a dataset for machine learning with scikit-learn {.title style="clear: both"}
+Preparing a dataset for machine learning with scikit-learn
 ----------------------------------------------------------
 
 * * * * *
@@ -139,7 +139,7 @@ This produces an output as illustrated in the following screenshot: 
 
 ![](./3_files/6a674e0e-134e-4e32-b21e-146444f99900.png)
 
-### Dropping features that are redundant {.title}
+### Dropping features that are redundant
 
 From the dataset seen previously, there are a few columns that are
 redundant to the machine learning process:
@@ -172,7 +172,7 @@ Copy
 df = df.drop(['nameOrig', 'nameDest', 'isFlaggedFraud'], axis = 1)
 ```
 
-### Reducing the size of the data {.title}
+### Reducing the size of the data
 
 The dataset that we are working with contains over 6 million rows of
 data. Most machine learning algorithms will take a large amount of time
@@ -209,7 +209,7 @@ from pandas.
 This results in a dataframe with a little over 20,000 rows, over which
 we can now execute our algorithms relatively quickly. 
 
-### Encoding the categorical variables {.title}
+### Encoding the categorical variables
 
 One of the main constraints of scikit-learn is that you cannot implement
 the machine learning algorithms on columns that are categorical in
@@ -329,7 +329,7 @@ dataframe now looks like this:
 
 ![](./3_files/5c4a588d-5eb4-40b4-a7eb-23e2252045dd.png)
 
-### Missing values {.title}
+### Missing values
 
 Another constraint with scikit-learn is that it cannot handle data with
 missing values. Therefore, we must check whether our dataset has any
@@ -402,7 +402,7 @@ again using pandas. 
 
 
 
-The k-NN algorithm {.title style="clear: both"}
+The k-NN algorithm
 ------------------
 
 * * * * *
@@ -432,7 +432,7 @@ the category/shape with the highest probability. 
 
 
 
-Implementing the k-NN algorithm using scikit-learn {.title style="clear: both"}
+Implementing the k-NN algorithm using scikit-learn
 --------------------------------------------------
 
 * * * * *
@@ -450,7 +450,7 @@ In the following section, you will learn how to do the following:
 -   Implement the first version of the algorithm on the data
 -   Evaluate the accuracy of your model using a k-NN score
 
-### Splitting the data into training and test sets {.title}
+### Splitting the data into training and test sets
 
 The idea of training and test sets is fundamental to every machine
 learning problem. When thinking about this concept, it is easy to
@@ -529,7 +529,7 @@ variable:
     preceding code, the *stratify* argument has been set to the target
     labels to ensure that this happens.   
 
-### Implementation and evaluation of your model {.title}
+### Implementation and evaluation of your model
 
 Now that we have the training and test splits, we can implement the k-NN
 algorithm on the training sets and evaluate its score on the test sets.
@@ -571,7 +571,7 @@ evaluate the performance of your classifier. Further methods of
 evaluation will be discussed at a later stage in the chapter. 
 
 
-Fine-tuning the parameters of the k-NN algorithm {.title style="clear: both"}
+Fine-tuning the parameters of the k-NN algorithm
 ------------------------------------------------
 
 * * * * *
@@ -683,7 +683,7 @@ data as we have used the entire dataset for training and testing. 
 
 
 
-Scaling for optimized performance {.title style="clear: both"}
+Scaling for optimized performance
 ---------------------------------
 
 * * * * *
@@ -748,7 +748,7 @@ substantial improvement from the score of `0.985`{.literal}. Thus, we
 see how scaling the data results in improved performance. 
 
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

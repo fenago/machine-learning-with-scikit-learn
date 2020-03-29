@@ -1,6 +1,6 @@
 
 
-Chapter 3. Predicting Categories with Logistic Regression {.title}
+Chapter 3. Predicting Categories with Logistic Regression
 ---------------------------------------------------------
 
 The logistic regression algorithm is one of the most interpretable
@@ -25,7 +25,7 @@ makes intuitive and logical sense. 
 
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -43,7 +43,7 @@ Check out the following video to see the code in action:
 
 
 
-Understanding logistic regression mathematically  {.title style="clear: both"}
+Understanding logistic regression mathematically 
 -------------------------------------------------
 
 * * * * *
@@ -105,7 +105,7 @@ In the preceding diagram, the following is happening:
     *x*-axis.
 
 
-Implementing logistic regression using scikit-learn {.title style="clear: both"}
+Implementing logistic regression using scikit-learn
 ---------------------------------------------------
 
 * * * * *
@@ -129,7 +129,7 @@ import pandas as pd
 df = pd.read_csv('fraud_prediction.csv')
 ```
 
-### Splitting the data into training and test sets {.title}
+### Splitting the data into training and test sets
 
 The first step to building any machine learning model with scikit-learn
 is to split the data into training and test sets. This can be done by
@@ -191,7 +191,7 @@ better than an algorithm that randomly guesses the output. 
 
 
 
-Fine-tuning the hyperparameters {.title style="clear: both"}
+Fine-tuning the hyperparameters
 -------------------------------
 
 * * * * *
@@ -240,7 +240,7 @@ with the penalty argument set to **l1**, indicating that we are using
 **l1** regression. We then initialize a grid with the possible values of
 inverse regularization strengths that go from 0.0001 to 10. 
 
-### Note {.title}
+### Note
 
 The number of values that you initialize in a grid object for the
 hyperparameter of a model is arbitrary. However, the more values, the
@@ -327,7 +327,7 @@ training set itself. 
 
 
 
-Scaling the data {.title style="clear: both"}
+Scaling the data
 ----------------
 
 * * * * *
@@ -369,7 +369,7 @@ used a logistic regression model instead of the k-NN model. 
 
 
 
-Interpreting the logistic regression model {.title style="clear: both"}
+Interpreting the logistic regression model
 ------------------------------------------
 
 * * * * *
@@ -421,7 +421,7 @@ intercept, we can construct an equation in the following form:
 ![](./7_files/c8f915cf-3f6f-4a7f-9f8e-92e1ffad56d4.png)
 
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

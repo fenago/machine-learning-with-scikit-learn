@@ -1,5 +1,5 @@
 
-Chapter 7. Clustering Data with Unsupervised Machine Learning {.title}
+Chapter 7. Clustering Data with Unsupervised Machine Learning
 -------------------------------------------------------------
 
 Most of the data that you will encounter out in the wild will not come
@@ -30,7 +30,7 @@ In this chapter, you will learn about the following topics:
 
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -49,7 +49,7 @@ Check out the following video to see the code in action:
 
 
 
-The k-means algorithm {.title style="clear: both"}
+The k-means algorithm
 ---------------------
 
 * * * * *
@@ -64,7 +64,7 @@ Let's consider a set of points, as illustrated in the following diagram:
 
 A random set of points 
 
-### Assignment of centroids {.title}
+### Assignment of centroids
 
 The first step that the algorithm takes is to assign a set of random
 centroids. Assuming that we want to find two distinct clusters or
@@ -100,7 +100,7 @@ upper-right corner, note how the centroids move closer to the center of
 the two distinct groups. In reality, the algorithm does not have an
 optimal endpoint at which it stops the iteration.
 
-### When does the algorithm stop iterating? {.title}
+### When does the algorithm stop iterating?
 
 Typically, the algorithm looks for two metrics, in order to stop the
 iteration process:
@@ -115,7 +115,7 @@ distances between each point and the centroid of a cluster are as small
 as possible.
 
 
-Implementing the k-means algorithm in scikit-learn {.title style="clear: both"}
+Implementing the k-means algorithm in scikit-learn
 --------------------------------------------------
 
 * * * * *
@@ -127,7 +127,7 @@ chapters. The key difference is that we are going to drop the target
 feature, which contains the labels, and identify the two clusters that
 are used to detect fraud.
 
-### Creating the base k-means model {.title}
+### Creating the base k-means model
 
 In order to load the dataset into our workspace and drop the target
 feature with the labels, we use the following code:
@@ -185,7 +185,7 @@ falls into. Mobile transactions that have a label of `0`{.literal} fall
 into one group, while transactions that have a label of `1`{.literal}
 fall into the second group. 
 
-### The optimal number of clusters {.title}
+### The optimal number of clusters
 
 While explaining how the k-means algorithm works, we mentioned how the
 algorithm terminates once it finds the optimal number of clusters. When
@@ -300,7 +300,7 @@ into why four is the ideal number of groups/clusters for this dataset. 
 
 
 
-Feature engineering for optimization {.title style="clear: both"}
+Feature engineering for optimization
 ------------------------------------
 
 * * * * *
@@ -316,7 +316,7 @@ follows:
 -   Scaling
 -   Principal component analysis 
 
-### Scaling {.title}
+### Scaling
 
 Scaling is the process of standardizing your data so that the values
 under every feature fall within a certain range, such as -1 to +1. In
@@ -412,7 +412,7 @@ point, where the rate of decrease in the inertia values is lower.
 However, if we look closely, we can find this point at **`8`**
 clusters. 
 
-### Principal component analysis {.title}
+### Principal component analysis
 
 The **principal component analysis** (**PCA**) is a subset of
 dimensionality reduction. **Dimensionality reduction** is the process of
@@ -566,7 +566,7 @@ one component. 
 
 
 
-Cluster visualization {.title style="clear: both"}
+Cluster visualization
 ---------------------
 
 * * * * *
@@ -586,7 +586,7 @@ techniques, in order to create compelling cluster visuals. 
 
  
 
-### t-SNE {.title}
+### t-SNE
 
 The **t-SNE** is an abbreviation that stands for **t-distributed
 stochastic neighbor embedding**. The fundamental concept behind the
@@ -712,13 +712,13 @@ have been assigned the fraud label, while the purple color represents
 the transactions that have been assigned the non-fraudulent label.
 (Please refer to the color version of the image.)
 
-### Hierarchical clustering {.title}
+### Hierarchical clustering
 
 As discussed initially, the hierarchical clustering technique uses the
 dendrogram to visualize clusters or groups. In order to explain how the
 dendrogram works, we will consider a dataset with four features. 
 
-#### Step 1 – Individual features as individual clusters {.title}
+#### Step 1 – Individual features as individual clusters
 
 In the first step, each feature in the dataset is considered to be its
 own cluster. This is illustrated in the following diagram:
@@ -731,7 +731,7 @@ Each feature in the preceding diagram is one single cluster, at this
 point in time. The algorithm now searches to find the two features that
 are closest to each other, and merges them into a single cluster. 
 
-#### Step 2 – The merge {.title}
+#### Step 2 – The merge
 
 In this step, the algorithm merges the data points in the two closest
 features together, into one single cluster. This is illustrated in the
@@ -747,7 +747,7 @@ these two features are the closest to each other. 
 
  
 
-#### Step 3 – Iteration {.title}
+#### Step 3 – Iteration
 
 The algorithm now continues the process of merging features together
 iteratively, until no more clusters can be formed. The final dendrogram
@@ -759,7 +759,7 @@ the cluster of **Feature 2** and **3** were closest to each other.
 Therefore, these three features were clustered into one group. Finally,
 **Feature 4** was grouped together with **Feature 3**.
 
-#### Implementing hierarchical clustering {.title}
+#### Implementing hierarchical clustering
 
 Now that you have learned how hierarchical clustering works, we
 can implement this concept. In order to create a hierarchical cluster,
@@ -808,7 +808,7 @@ In the preceding code, the following applies:
     feature names that was created earlier in the code.
 
 
-Going from unsupervised to supervised learning {.title style="clear: both"}
+Going from unsupervised to supervised learning
 ----------------------------------------------
 
 * * * * *
@@ -822,7 +822,7 @@ In this section, you will learn how to convert the labels generated by
 the unsupervised machine learning algorithm into a decision tree that
 makes use of those labels. 
 
-### Creating a labeled dataset  {.title}
+### Creating a labeled dataset 
 
 The first step is to convert the labels generated by an unsupervised
 machine learning algorithm, such as the k-means algorithm, and append it
@@ -879,7 +879,7 @@ the `predict()`{.literal}* *method, and convert it into a
 `pandas`{.literal} series. We then merge this series into the dataframe,
 in order to create our labeled dataset. 
 
-### Building the decision tree {.title}
+### Building the decision tree
 
 Now that we have the labeled dataset, we can create a decision tree, in
 order to convert the unsupervised machine learning problem into a
@@ -966,7 +966,7 @@ This results in the decision tree shown in the following diagram:
 A part of the decision tree that was created 
 
  
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

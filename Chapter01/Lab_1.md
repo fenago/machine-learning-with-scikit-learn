@@ -1,5 +1,5 @@
 
-Chapter 1. Introducing Machine Learning with scikit-learn {.title}
+Chapter 1. Introducing Machine Learning with scikit-learn
 ---------------------------------------------------------
 
 Welcome to the world of machine learning with scikit-learn. I'm thrilled
@@ -17,7 +17,7 @@ would be this –
 
 
 
-A brief introduction to machine learning {.title style="clear: both"}
+A brief introduction to machine learning
 ----------------------------------------
 
 * * * * *
@@ -44,7 +44,7 @@ Scikit-learn is designed to tackle problems pertaining to supervised and
 unsupervised learning only, and does not support reinforcement learning
 at present. 
 
-### Supervised learning {.title}
+### Supervised learning
 
 Supervised learning is a form of machine learning in which our data
 comes with a set of labels or a target variable that is numeric. These
@@ -71,7 +71,7 @@ learning algorithms are first used to cluster data without labels into
 distinct groups to which we can then assign labels. This is discussed in
 detail in the following section.
 
-### Unsupervised learning {.title}
+### Unsupervised learning
 
 Unsupervised learning is a form of machine learning in which the
 algorithm tries to detect/find patterns in data that do not have an
@@ -106,7 +106,7 @@ Clustering two groups together 
 
 
 
-What is scikit-learn? {.title style="clear: both"}
+What is scikit-learn?
 ---------------------
 
 * * * * *
@@ -139,7 +139,7 @@ quite efficient in the process. 
 
 
 
-Installing scikit-learn {.title style="clear: both"}
+Installing scikit-learn
 -----------------------
 
 * * * * *
@@ -164,12 +164,12 @@ straightforward:
     scikit-learn, the pip method works best (for advanced users of
     Python)
 
-### Note {.title}
+### Note
 
 This book will be using Python 3.6 for all the code that is displayed
 throughout every chapter, unless mentioned otherwise.
 
-### The pip method {.title}
+### The pip method
 
 Scikit-learn requires a few packages to be installed on your device
 before you can install it. These are as follows:
@@ -212,11 +212,11 @@ Copy
 pip3 install -U scikit-learn
 ```
 
-### Note {.title}
+### Note
 
 The version of scikit-learn implemented in the book is 0.19.1.
 
-### The Anaconda method {.title}
+### The Anaconda method
 
 In the event that you have installed Python using the Anaconda
 distribution, you can install scikit-learn by using the following code
@@ -254,7 +254,7 @@ Copy
 conda update scikit-learn
 ```
 
-### Note {.title}
+### Note
 
 When upgrading or uninstalling scikit-learn that has been installed with
 Anaconda, avoid using the pip method at all costs as doing so is most
@@ -262,13 +262,13 @@ likely going to fail upgrading or removing all the required files. Stick
 with either the pip method or the Anaconda method in order to maintain
 consistency. 
 
-### Additional packages {.title}
+### Additional packages
 
 In this section, we will talk about the packages that we will be
 installing outside of scikit-learn that will be used throughout this
 book.
 
-#### Pandas {.title}
+#### Pandas
 
 To install Pandas, you can use either the pip method or the Anaconda
 method, as follows:
@@ -289,7 +289,7 @@ Copy
 conda install pandas
 ```
 
-#### Matplotlib {.title}
+#### Matplotlib
 
 To install matplotlib, you can use either the pip method or the Anaconda
 method, as follows:
@@ -310,7 +310,7 @@ Copy
 conda install matplotlib
 ```
 
-#### Tree {.title}
+#### Tree
 
 To install tree, you can use either the pip method or the Anaconda
 method, as follows:
@@ -331,7 +331,7 @@ Copy
 conda install tree
 ```
 
-#### Pydotplus {.title}
+#### Pydotplus
 
 To install pydotplus, you can use either the pip method or the Anaconda
 method, as follows:
@@ -352,7 +352,7 @@ Copy
 conda install pydotplus
 ```
 
-#### Image {.title}
+#### Image
 
 To install Image, you can use either the pip method or the Anaconda
 method, as follows:
@@ -374,7 +374,7 @@ conda install Image
 ```
 
 
-Algorithms that you will learn to implement using scikit-learn {.title style="clear: both"}
+Algorithms that you will learn to implement using scikit-learn
 --------------------------------------------------------------
 
 * * * * *
@@ -387,7 +387,7 @@ classified into the following two categories:
 
  
 
-### Supervised learning algorithms {.title}
+### Supervised learning algorithms
 
 Supervised learning algorithms can be used to solve both classification
 and regression problems. In this book, you will learn how to implement
@@ -418,7 +418,7 @@ algorithms are as follows:
     algorithm that uses the mathematical model of probability to solve
     classification problems
 
-### Unsupervised learning algorithms {.title}
+### Unsupervised learning algorithms
 
 Unsupervised machine learning algorithms are typically used to cluster
 points of data based on distance. The unsupervised learning algorithm
@@ -432,7 +432,7 @@ that you will learn about in this book is as follows:
 
  
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

@@ -1,5 +1,5 @@
 
-Chapter 8. Performance Evaluation Methods {.title}
+Chapter 8. Performance Evaluation Methods
 -----------------------------------------
 
 Your method of performance evaluation will vary by the type of machine
@@ -17,7 +17,7 @@ chapter will be split into three sections, as follows:
 -   Performance evaluation for unsupervised algorithms 
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -36,7 +36,7 @@ Check out the following video to see the code in action:
  
 
 
-Why is performance evaluation critical? {.title style="clear: both"}
+Why is performance evaluation critical?
 ---------------------------------------
 
 * * * * *
@@ -59,7 +59,7 @@ performance evaluation is critical are as follows:
 
 
 
-Performance evaluation for classification algorithms {.title style="clear: both"}
+Performance evaluation for classification algorithms
 ----------------------------------------------------
 
 * * * * *
@@ -154,7 +154,7 @@ Copy
 conda install -c conda-forge scikit-plot
 ```
 
-### The confusion matrix {.title}
+### The confusion matrix
 
 Until now, we have used the accuracy as the sole measure of model
 performance. That was fine, because we have a balanced dataset. A
@@ -263,7 +263,7 @@ In the output, the precision, recall, and F1-score are all high, because
 we have built the ideal machine learning model. These values range from
 0 to 1, with 1 being the highest. 
 
-### The normalized confusion matrix {.title}
+### The normalized confusion matrix
 
 A **normalized confusion matrix** makes it easier for the data scientist
 to visually interpret how the labels are being predicted. In order to
@@ -319,7 +319,7 @@ regression model only predicted 42% of the non-fraudulent transactions
 correctly. This indicates, almost instantly, that the k-nearest neighbor
 model performed better.
 
-### Area under the curve {.title}
+### Area under the curve
 
 The curve, in this case, is the **receiver operator characteristics**
 (**ROC**) curve. This is a plot between the true positive rate and the
@@ -387,7 +387,7 @@ roc_auc_score(y_test, target_prob)
 This produces a score of 0.99. A higher `auc`{.literal} score indicates
 a better performing model. 
 
-### Cumulative gains curve {.title}
+### Cumulative gains curve
 
 When building multiple machine learning models, it is important to
 understand which of the models in question produces the type of
@@ -473,7 +473,7 @@ However, it is a good practice to compare how different models behave by
 using the cumulative gains chart, in order to gain a fundamental
 understanding of how your model makes predictions. 
 
-### Lift curve {.title}
+### Lift curve
 
 A **lift curve** gives you information about how well you can make
 predictions by using a machine learning model, as opposed to when you
@@ -542,7 +542,7 @@ dotted line). This means that the logistic regression model does worse
 than not using a predictive model for a small percentage of the data
 when it comes to predicting the non-fraudulent transactions. 
 
-### K-S statistic plot {.title}
+### K-S statistic plot
 
 The **K-S statistic plot**, or the **Kolmogorov Smirnov** statistic
 plot, is a plot that tells you whether the model gets confused when it
@@ -615,7 +615,7 @@ This means that the k-nearest neighbors model, which has a large
 distance for about 70% of the total data, is much better at making
 predictions about fraudulent transactions. 
 
-### Calibration plot {.title}
+### Calibration plot
 
 A **calibration plot**, as the name suggests, tells you how well
 calibrated your model is. A well-calibrated model will have a prediction
@@ -685,7 +685,7 @@ as follows:
 
  
 
-### Learning curve {.title}
+### Learning curve
 
 A **learning curve** is a plot that compares how the training accuracy
 scores and the test accuracy scores vary as the number of samples/rows
@@ -718,7 +718,7 @@ In the preceding curve, the following applies:
 
  
 
-### Cross-validated box plot {.title}
+### Cross-validated box plot
 
 In this plot, we compare the cross-validated accuracy scores of multiple
 models by making use of box plots. In order to do so, we use the
@@ -803,7 +803,7 @@ In the preceding plot, the following applies:
 
 
 
-Performance evaluation for regression algorithms {.title style="clear: both"}
+Performance evaluation for regression algorithms
 ------------------------------------------------
 
 * * * * *
@@ -850,7 +850,7 @@ linear_reg.fit(feature, target)
 predictions = linear_reg.predict(feature)
 ```
 
-### Mean absolute error {.title}
+### Mean absolute error
 
 The mean absolute error is given by the following formula:
 
@@ -888,7 +888,7 @@ from the `metrics`{.literal} module in scikit-learn is used to compute
 the MAE. It takes in two arguments: the real/true output, which is the
 target, and the predictions, which are the predicted outputs. 
 
-### Mean squared error {.title}
+### Mean squared error
 
 The mean squared error is given by the following formula:
 
@@ -916,7 +916,7 @@ predictions as arguments. The mean squared error is better at detecting
 larger errors, because we square the errors, instead of depending on
 only the difference. 
 
-### Root mean squared error {.title}
+### Root mean squared error
 
 The root mean squared error is given by the following formula:
 
@@ -950,7 +950,7 @@ possible, indicating that the model has relatively low error values. 
 
 
 
-Performance evaluation for unsupervised algorithms {.title style="clear: both"}
+Performance evaluation for unsupervised algorithms
 --------------------------------------------------
 
 * * * * *
@@ -986,7 +986,7 @@ performance charts that can be deployed are as follows:
 In this section, you will learn how to create and interpret each of the
 preceding plots. 
 
-### Elbow plot {.title}
+### Elbow plot
 
 In order to construct an elbow plot, we use the following code:
 
@@ -1026,7 +1026,7 @@ In the preceding plot, the following applies:
 
  
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *

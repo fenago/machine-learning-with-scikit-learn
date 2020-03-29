@@ -1,5 +1,5 @@
 
-Chapter 4. Predicting Categories with Naive Bayes and SVMs {.title}
+Chapter 4. Predicting Categories with Naive Bayes and SVMs
 ----------------------------------------------------------
 
 In this chapter, you will learn about two popular classification machine
@@ -19,7 +19,7 @@ In this chapter, you will learn about the following topics:
 
 
 
-Technical requirements {.title style="clear: both"}
+Technical requirements
 ----------------------
 
 * * * * *
@@ -38,7 +38,7 @@ Check out the following video to see the code in action:
  
 
 
-The Naive Bayes algorithm  {.title style="clear: both"}
+The Naive Bayes algorithm 
 --------------------------
 
 * * * * *
@@ -99,7 +99,7 @@ formula produces a result of 0.77. This means that the classifier
 predicts that there is a 77% probability that a transaction will be
 predicted as fraudulent, using the data that was given previously.
 
-### Implementing the Naive Bayes algorithm in scikit-learn {.title}
+### Implementing the Naive Bayes algorithm in scikit-learn
 
 Now that you have learned how the Naive Bayes algorithm generates
 predictions, we will implement the same classifier using scikit-learn,
@@ -172,7 +172,7 @@ following in mind:
 
 
 
-Support vector machines {.title style="clear: both"}
+Support vector machines
 -----------------------
 
 * * * * *
@@ -219,7 +219,7 @@ In the preceding diagram, the following applies:
 -   A low value of inverse regularization strength ensures that this
     margin is as big as possible
 
-### Implementing the linear support vector machine algorithm in scikit-learn {.title}
+### Implementing the linear support vector machine algorithm in scikit-learn
 
 In this section, you will learn how to implement the linear support
 vector machines in scikit-learn. The first step is to import the data
@@ -278,7 +278,7 @@ In the preceding code, the following applies:
 Now that we have built the model, we can find and optimize the most
 ideal value for the hyperparameters. 
 
-### Hyperparameter optimization for the linear SVMs {.title}
+### Hyperparameter optimization for the linear SVMs
 
 In this section, you will learn how to optimize the hyperparameters for
 the linear support vector machines. In particular, there is one
@@ -287,7 +287,7 @@ hyperparameter of interest: the **inverse regularization strength**. 
 We will explore how to optimize this hyperparameter, both graphically
 and algorithmically.
 
-#### Graphical hyperparameter optimization {.title}
+#### Graphical hyperparameter optimization
 
 In order to optimize the inverse regularization strength, we will plot
 the accuracy scores for the training and testing sets, using the
@@ -358,7 +358,7 @@ In the preceding diagram, the following applies:
     the datasets 
 -   This will help you to prevent both overfitting and underfitting
 
-#### Hyperparameter optimization using GridSearchCV {.title}
+#### Hyperparameter optimization using GridSearchCV
 
 In this section, you will learn how to optimize the inverse
 regularization strength using the `GridSearchCV`{.literal} algorithm. We
@@ -403,7 +403,7 @@ It's a good practice to compare and contrast the results of the
 graphical method of hyperparameter optimization with that of
 `GridSearchCV`{.literal}, in order to validate your results. 
 
-### Scaling the data for performance improvement {.title}
+### Scaling the data for performance improvement
 
 In this section, you will learn about how scaling and standardizing the
 data can lead to an improvement in the overall performance of the linear
@@ -447,7 +447,7 @@ In the preceding code, the following applies:
     scaled accuracy scores from the test data
 
 
-Summary {.title style="clear: both"}
+Summary
 -------
 
 * * * * *
