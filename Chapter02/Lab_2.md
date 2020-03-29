@@ -83,7 +83,7 @@ Jupyter Notebook
 The fundamental goal of this dataset is to predict whether a mobile
 transaction is fraudulent. In order to do this, we need to first have a
 brief understanding of the contents of our data. In order to explore the
-dataset, we will use the `pandas`{.literal}* *package in Python. You can
+dataset, we will use the `pandas` package in Python. You can
 install pandas by using the following code in Terminal (macOS/Linux) or
 PowerShell (Windows):
 
@@ -136,17 +136,17 @@ This produces an output as illustrated in the following screenshot: 
 From the dataset seen previously, there are a few columns that are
 redundant to the machine learning process:
 
--   `nameOrig`{.literal}:* *This column is a unique identifier that
+-   `nameOrig`: This column is a unique identifier that
     belongs to each customer. Since each identifier is unique with every
     row of the dataset, the machine learning algorithm will not be able
     to discern any patterns from this feature. 
--   `nameDest`{.literal}:* *This column is also a unique identifier that
+-   `nameDest`: This column is also a unique identifier that
     belongs to each customer and as such provides no value to the
     machine learning algorithm. 
--   `isFlaggedFraud`{.literal}: This column flags a transaction as
+-   `isFlaggedFraud`: This column flags a transaction as
     fraudulent if a person tries to transfer more than 200,000 in a
     single transaction. Since we already have a feature
-    called `isFraud`{.literal}* *that flags a transaction as fraud, this
+    called `isFraud` that flags a transaction as fraud, this
     feature becomes redundant. 
 
  
@@ -191,7 +191,7 @@ df = pd.concat([df_fraud, df_nofraud], axis = 0)
 In the preceding code, the fraudulent rows are stored in one dataframe.
 This dataframe contains a little over 8,000 rows. The 12,000
 non-fraudulent rows are stored in another dataframe, and the two
-dataframes are joined together using the `concat`{.literal}* *method
+dataframes are joined together using the `concat` method
 from pandas.
 
 This results in a dataframe with a little over 20,000 rows, over which
@@ -201,25 +201,25 @@ we can now execute our algorithms relatively quickly. 
 
 One of the main constraints of scikit-learn is that you cannot implement
 the machine learning algorithms on columns that are categorical in
-nature. For example, the `type`{.literal}* *column in our dataset has
+nature. For example, the `type` column in our dataset has
 five categories:
 
  
 
--   `CASH-IN`{.literal}
--   `CASH-OUT`{.literal}
--   `DEBIT`{.literal}
--   `PAYMENT`{.literal}
--   `TRANSFER`{.literal}
+-   `CASH-IN`
+-   `CASH-OUT`
+-   `DEBIT`
+-   `PAYMENT`
+-   `TRANSFER`
 
 These categories will have to be encoded into numbers that scikit-learn
 can make sense of. In order to do this, we have to implement a two-step
 process. 
 
 The first step is to convert each category into a number:
-`CASH-IN = 0`{.literal}, `CASH-OUT = 1`{.literal},
-`DEBIT = 2`{.literal}, `PAYMENT = 3`{.literal},
-`TRANSFER = 4`{.literal}. We can do this by using the following code:
+`CASH-IN = 0`, `CASH-OUT = 1`,
+`DEBIT = 2`, `PAYMENT = 3`,
+`TRANSFER = 4`. We can do this by using the following code:
 
 ```
 #Package Imports
@@ -240,11 +240,11 @@ type_encode = LabelEncoder()
 df['type'] = type_encode.fit_transform(df.type)
 ```
 
-The code first coverts the `type`{.literal} column to a categorical
-feature. We then use `LabelEncoder()`{.literal} in order to initialize
+The code first coverts the `type` column to a categorical
+feature. We then use `LabelEncoder()` in order to initialize
 an integer encoder object that is
-called `type_encode`{.literal}*. *Finally, we apply
-the `fit_transform`{.literal}* *method on the `type`{.literal}* *column
+called `type_encode`*. *Finally, we apply
+the `fit_transform` method on the `type` column
 in order to convert each category into a number.
 
 Broadly speaking, there are two types of categorical variables:
@@ -254,7 +254,7 @@ Broadly speaking, there are two types of categorical variables:
 
 Nominal categorical variables have no inherent order to them. An example
 of the nominal type of categorical variable is
-the `type`{.literal}* *column. 
+the `type` column. 
 
 Ordinal categorical variables have an inherent order to them. An example
 of the ordinal type of categorical variable is Education Level, in which
@@ -263,7 +263,7 @@ people with a Undergraduate degree only. 
 
 In the case of ordinal categorical variables, integer encoding, as
 illustrated previously, is sufficient and we do not need to one-hot
-encode them. Since the `type`{.literal}* *column is a nominal
+encode them. Since the `type` column is a nominal
 categorical variable, we have to one-hot encode it after integer
 encoding it. This is done by using the following code: 
 
@@ -290,24 +290,24 @@ df.head()
 ```
 
 In the code, we first create a one-hot encoding object
-called `type_one_hot`{.literal}*. *We then transform
-the `type`{.literal}* *column into one-hot encoded columns by using
-the `fit_transform`{.literal}* *method. 
+called `type_one_hot`*. *We then transform
+the `type` column into one-hot encoded columns by using
+the `fit_transform` method. 
 
 We have five categories that are represented by integers 0 to 4. Each of
 these five categories will now get its own column. Therefore, we create
-five columns called `type_0`{.literal}, `type_1`{.literal},
-`type_2`{.literal}, `type_3`{.literal}, and `type_4`{.literal}. Each of
-these five columns is represented by two values: `1`{.literal}, which
-indicates the presence of that category, and `0`{.literal}, which
+five columns called `type_0`, `type_1`,
+`type_2`, `type_3`, and `type_4`. Each of
+these five columns is represented by two values: `1`, which
+indicates the presence of that category, and `0`, which
 indicates the absence of that category. 
 
-This information is stored in the `ohe_variable`{.literal}*. *Since this
+This information is stored in the `ohe_variable`*. *Since this
 variable holds the five columns, we will join this to the original
-dataframe by using the `concat`{.literal}* *method
-from `pandas`{.literal}*. *
+dataframe by using the `concat` method
+from `pandas`*. *
 
-The ordinal `type`{.literal} column is then dropped from the dataframe
+The ordinal `type` column is then dropped from the dataframe
 as this column is now redundant post one hot encoding. The final
 dataframe now looks like this:
 
@@ -365,7 +365,7 @@ df = df.fillna(0)
 We now have a dataset that is ready for machine learning with
 scikit-learn. We will use this dataset for all the other chapters that
 we will go through in the future. To make it easy for us, then, we will
-export this dataset as a `.csv`{.literal} file and store it in the same
+export this dataset as a `.csv` file and store it in the same
 directory that you are working in with the Jupyter Notebook.
 
 We can do this by using the following code: 
@@ -374,7 +374,7 @@ We can do this by using the following code: 
 df.to_csv('fraud_prediction.csv')
 ```
 
-This will create a `.csv`{.literal} file of this dataset in the
+This will create a `.csv` file of this dataset in the
 directory that you are working in, which you can load into the notebook
 again using pandas. 
 
@@ -449,7 +449,7 @@ The first step to this process is to save all our features into one
 variable and the target variable, which contains the labels into another
 variable. 
 
-In our dataset, the target variable is called `isFraud`{.literal}* *and
+In our dataset, the target variable is called `isFraud` and
 contains two labels: 0 if the transaction is not a fraud and 1 if the
 transaction is a fraud. The features are the remaining variables. We can
 store these into two separate variables by using the following code: 
@@ -474,29 +474,29 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 ```
 
 We use
-the `train_test_split`{.literal} from `sklearn.model_selection`{.literal}* *in
+the `train_test_split` from `sklearn.model_selection` in
 order to perform this task. In the preceding code, we have four
-variables. `X_train`{.literal} and `X_test`{.literal} correspond to the
-training and test sets for the features, while `y_train`{.literal} and
-`y_test`{.literal} correspond to training and test sets for the target
+variables. `X_train` and `X_test` correspond to the
+training and test sets for the features, while `y_train` and
+`y_test` correspond to training and test sets for the target
 variable. 
 
  
 
-The `train_test_split()`{.literal}* *function takes in four arguments.
+The `train_test_split()` function takes in four arguments.
 The first argument is the array containing the features, the second
 argument is the array containing the target variable.
-The ` test_size`{.literal} argument* *is used to specify the amount of
+The ` test_size` argument* *is used to specify the amount of
 data that will be split and stored into the test set. Since we specified
-`0.3`{.literal}, 30% of the original data will be stored in the test
+`0.3`, 30% of the original data will be stored in the test
 set, while 70% of the original data will be used for training. 
 
-There are two primary ways in which the `train_test_split()`{.literal}
+There are two primary ways in which the `train_test_split()`
 function shuffles data into training and test sets for the target
 variable:
 
 -   **Random sampling**: Randomly puts target labels into training and
-    test sets (`y_train`{.literal} and `y_test`{.literal} in the
+    test sets (`y_train` and `y_test` in the
     preceding case).
 -   **Stratified sampling**:** **Ensures that the target labels are
     represented adequately in the training and test sets. In the
@@ -527,12 +527,12 @@ knn_classifier.score(X_test, y_test)
 
 In the preceding code, we first initialize a k-NN classifier with three
 neighbors. The number of neighbors is chosen arbitrarily, and three is a
-good starting number. Next, we use the `.fit()`{.literal}* *method to
+good starting number. Next, we use the `.fit()` method to
 fit this classifier onto our training data. Finally, by using
-the `.score()`{.literal}* *method on the test data, we obtain a value
+the `.score()` method on the test data, we obtain a value
 between 0 and 1 that indicates how accurate the classifier is. 
 
-In our case, we obtained an accuracy score of `0.98`{.literal}, which is
+In our case, we obtained an accuracy score of `0.98`, which is
 very good! 
 
  
@@ -570,13 +570,13 @@ overfitting. 
 Both these cases can be avoided by visualizing how well the model
 performs in the training and test sets by using a different number of
 neighbors. To do this, we first find the optimal number of neighbors by
-using the `GridSearchCV`{.literal} algorithm. 
+using the `GridSearchCV` algorithm. 
 
-`GridSearchCV`{.literal} creates an empty grid and fills it with
+`GridSearchCV` creates an empty grid and fills it with
 possible values of the number of neighbors or any other machine learning
 parameter that we want to optimize. It then uses each value in the grid
 and tests its performance and determines the  optimal value of the
-parameter. We can implement the `GridSearchCV`{.literal} algorithm to
+parameter. We can implement the `GridSearchCV` algorithm to
 find the optimal number of neighbors by using the following code:
 
 ```
@@ -613,8 +613,8 @@ take more computational time to compute and find the optimal number of
 neighbors, especially when your dataset is large. 
 
 Next, we initialize a k-NN classifier and use
-the `GridSearchCV()`{.literal}* *function on the classifier along with
-the grid. We set the `cv`{.literal}* *argument to 10, indicating that we
+the `GridSearchCV()` function on the classifier along with
+the grid. We set the `cv` argument to 10, indicating that we
 want to use 10-fold cross validation while doing this. Cross validation
 is a technique in which the classifier first divides the data into 10
 parts. The first nine parts are used as the training set while the
@@ -642,11 +642,11 @@ Cross-validation in action
 In the preceding diagram, the black boxes illustrate the training data
 while the white box illustrates the test data. 
 
-Finally, we use the `.best_params_`{.literal}* *to extract the optimal
+Finally, we use the `.best_params_` to extract the optimal
 number of neighbors. In our case, the optimal number of neighbors was 1,
-which resulted in an accuracy score of `0.985`{.literal}. This is an
+which resulted in an accuracy score of `0.985`. This is an
 improvement of 0.002 from the original classifier that we built, which
-had a score of `0.983`{.literal} with three neighbors. 
+had a score of `0.983` with three neighbors. 
 
 Using cross-validation ensures that we do not overfit or underfit the
 data as we have used the entire dataset for training and testing. 
@@ -698,21 +698,21 @@ knn_classifier_scaled.score(X_test, y_test)
 
 In this code, we specify the order in which the pipeline has to be
 executed. We store this order in a variable
-called `pipeline_order`{.literal}* *by specifying that we want to scale
-our data first by using the `StandardScaler()`{.literal}* *function and
+called `pipeline_order` by specifying that we want to scale
+our data first by using the `StandardScaler()` function and
 then build a k-NN classifier with one neighbor. 
 
-Next, we use the `Pipeline()`{.literal}* *function and pass in the order
+Next, we use the `Pipeline()` function and pass in the order
 of the pipeline as the only argument. We then fit this pipeline to the
 training set and extract the accuracy scores from the test set. 
 
-The `Pipeline`{.literal} function, as the name implies, is used to fit
+The `Pipeline` function, as the name implies, is used to fit
 multiple functions into a pipeline and execute them in a specified order
 that we think is apt for the process. This function helps us streamline
 and automate common machine learning tasks. 
 
-This resulted in an accuracy score of `0.997`{.literal}, which is a
-substantial improvement from the score of `0.985`{.literal}. Thus, we
+This resulted in an accuracy score of `0.997`, which is a
+substantial improvement from the score of `0.985`. Thus, we
 see how scaling the data results in improved performance. 
 
 
@@ -730,7 +730,7 @@ scikit-learn. 
 You have also learned how the k-NN algorithm works behind the scenes and
 have implemented a version of it using scikit-learn to predict whether a
 transaction was fraudulent. You then learned how to optimize the
-parameters of the algorithm using the popular `GridSearchCV`{.literal}
+parameters of the algorithm using the popular `GridSearchCV`
 algorithm. Finally, you have learnt how to standardize and scale your
 data in order to optimize the performance of your model. 
 

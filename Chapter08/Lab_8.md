@@ -117,7 +117,7 @@ following things:
 
 -   Confusion matrix
 -   Normalized confusion matrix
--   Area under the curve (`auc`{.literal} score)
+-   Area under the curve (`auc` score)
 -   Cumulative gains curve 
 -   Lift curve 
 -   K-S statistic plot
@@ -126,22 +126,22 @@ following things:
 -   Cross-validated box plot
 
 Some of the visualizations in this section will require a package titled
-`scikit-plot`{.literal}. The `scikit-plot`{.literal} package is very
+`scikit-plot`. The `scikit-plot` package is very
 effective, and it is used to visualize the various performance measures
 of machine learning models. It was specifically made for models that are
 built using scikit-learn. 
 
  
 
-In order to install `scikit-plot`{.literal} on your local machine, using
-`pip`{.literal} in Terminal, we use the following code:
+In order to install `scikit-plot` on your local machine, using
+`pip` in Terminal, we use the following code:
 
 ```
 pip3 install scikit-plot
 ```
 
 If you are using the Anaconda distribution to manage your Python
-packages, you can install `scikit-plot`{.literal} by using the following
+packages, you can install `scikit-plot` by using the following
 code:
 
 ```
@@ -207,8 +207,8 @@ The confusion matrix output from our classifier for fraudulent
 transactions 
 
 In the preceding code, we create a set of predictions using
-the `.predict()`{.literal}* *method on the test training data, and then
-we use the `confusion_matrix()`{.literal}* *function on the test set of
+the `.predict()` method on the test training data, and then
+we use the `confusion_matrix()` function on the test set of
 the target variable and the predictions that were created earlier. 
 
 The preceding confusion matrix looks almost perfect, as most cases are
@@ -245,7 +245,7 @@ This produces the following output:
 Classification report
 
 In the preceding code, we use
-the `classificiation_report()`{.literal} function with two arguments:
+the `classificiation_report()` function with two arguments:
 the test set of the target variable and the prediction variable that we
 created for the confusion matrix earlier.
 
@@ -348,7 +348,7 @@ of the predicted labels. For instance, the predicted label of **`1`**
 would have a certain set of probabilities associated with it, while the
 label **`0`** would have a certain set of probabilities associated with
 it. Using these probabilities, we use
-the `roc_curve()`{.literal}* *function, along with the target test set,
+the `roc_curve()` function, along with the target test set,
 to generate the ROC curve.
 
 The preceding curve is an example of a perfect ROC curve. The preceding
@@ -366,7 +366,7 @@ area under the curve score, we use the following code:
 roc_auc_score(y_test, target_prob)
 ```
 
-This produces a score of 0.99. A higher `auc`{.literal} score indicates
+This produces a score of 0.99. A higher `auc` score indicates
 a better performing model. 
 
 ### Cumulative gains curve
@@ -399,11 +399,11 @@ Cumulative gains plot for the k-nearest neighbors model
 
 In the preceding code, the following applies:
 
--   First, we import the `scikit-plot`{.literal} package, which
+-   First, we import the `scikit-plot` package, which
     generates the preceding plot. We then compute the probabilities for
     the target variable, which, in this case, are the probabilities if a
     particular mobile transaction is fraudulent or not on the test data.
--   Finally, we use the `plot_cumulative_gain()`{.literal}* *function on
+-   Finally, we use the `plot_cumulative_gain()` function on
     these probabilities and the test data target labels, in order to
     generate the preceding plot.
 
@@ -633,8 +633,8 @@ In the preceding code, the following applies:
 1.  First, we compute the probability that the positive class
     (fraudulent transactions) will be predicted for each model. 
 2.  Then, we store these probabilities and the model names in a list. 
-3.  Finally, we use the `plot_calibration_curve()`{.literal}* *function
-    from the `scikit-plot`{.literal} package with these probabilities,
+3.  Finally, we use the `plot_calibration_curve()` function
+    from the `scikit-plot` package with these probabilities,
     the test labels, and the model names, in order to create the
     calibration plot. 
 
@@ -741,10 +741,10 @@ In the preceding code, the following applies:
     of the cross-validated accuracy scores and the names of the models,
     so that we can use them later, in order to create the box plots. 
 3.  We then iterate over each model in the list of models, and use
-    the `model_selection.KFold()`{.literal}* *function in order to split
+    the `model_selection.KFold()` function in order to split
     the data into a five-fold cross-validated set.
 4.  Next, we extract the five-fold cross-validated scores by using
-    the `model_selection.cross_val_scores()`{.literal}* *function and
+    the `model_selection.cross_val_scores()` function and
     append the scores, along with the model names, into the lists that
     we initialized at the beginning of the code. 
 5.  Finally, a box plot is created, displaying the cross-validated
@@ -843,8 +843,8 @@ from sklearn import metrics
 metrics.mean_absolute_error(target, predictions)
 ```
 
-In the preceding code, the `mean_absolute_error()`{.literal}* *function
-from the `metrics`{.literal} module in scikit-learn is used to compute
+In the preceding code, the `mean_absolute_error()` function
+from the `metrics` module in scikit-learn is used to compute
 the MAE. It takes in two arguments: the real/true output, which is the
 target, and the predictions, which are the predicted outputs. 
 
@@ -868,8 +868,8 @@ code:
 metrics.mean_squared_error(target, predictions)
 ```
 
-We use the `mean_squared_error()`{.literal}* *function from the
-`metrics`{.literal} module, with the real/true output values and the
+We use the `mean_squared_error()` function from the
+`metrics` module, with the real/true output values and the
 predictions as arguments. The mean squared error is better at detecting
 larger errors, because we square the errors, instead of depending on
 only the difference. 
@@ -892,16 +892,16 @@ np.sqrt(metrics.mean_squared_error(target, predictions))
 ```
 
 In the preceding code, we use
-the `mean_squared_error()`{.literal}* *function with the true/real
+the `mean_squared_error()` function with the true/real
 output and the predictions, and then we take the square root of this
-answer by using the `np.sqrt()`{.literal}* *function from the
-`numpy`{.literal} package. 
+answer by using the `np.sqrt()` function from the
+`numpy` package. 
 
 Compared to the MAE and the MSE, the RMSE is the best possible metric
 that you can use in order to evaluate the linear regression model, since
 this detects large errors and gives you the value in terms of the output
 units. The key takeaway from using any one of the three metrics is that
-the value that these `metrics`{.literal} gives you should be as low as
+the value that these `metrics` gives you should be as low as
 possible, indicating that the model has relatively low error values. 
 
 
@@ -961,7 +961,7 @@ errors along the *y *axis.
 
 In the preceding code, the following applies:
 
--   We use the `plot_elbow_curve()`{.literal}* *function with the
+-   We use the `plot_elbow_curve()` function with the
     k-means model, the data, and the number of clusters that we want to
     evaluate
 -   In this case, we define a range of 1 to 19 clusters

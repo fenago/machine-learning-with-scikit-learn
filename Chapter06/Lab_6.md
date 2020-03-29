@@ -230,13 +230,13 @@ dt.score(X_test, y_test)
 
 In the preceding code, we do the following:
 
-1.  First, we import `DecisionTreeClassifier`{.literal} from
+1.  First, we import `DecisionTreeClassifier` from
     scikit-learn.
-2.  We then initialize a `DecisionTreeClassifier`{.literal} object with
-    two arguments. The first, `criterion`{.literal}, is the metric with
+2.  We then initialize a `DecisionTreeClassifier` object with
+    two arguments. The first, `criterion`, is the metric with
     which the tree picks the most important features in a recursive
     manner, which, in this case, is the Gini coefficient. The second is
-    `random_state`{.literal}, which is set to 50 so that the model
+    `random_state`, which is set to 50 so that the model
     produces the same result every time we run it.
 3.  Finally, we fit the model on the training data and evaluate its
     accuracy on the test data.
@@ -259,7 +259,7 @@ on two specific hyperparameters:
     until the last node contains 4% of the total samples in the data.
 
 In order to optimize the ideal hyperparameter and to extract the best
-possible decision tree, we use the `GridSearchCV`{.literal} module from
+possible decision tree, we use the `GridSearchCV` module from
 scikit-learn. We can set this up using the following code:
 
 ```
@@ -281,16 +281,16 @@ grid_object = GridSearchCV(estimator = dt, param_grid = grid_params, scoring = '
 
 In the preceding code, we do the following:
 
-1.  We first import the `GridSearchCV`{.literal} module from
+1.  We first import the `GridSearchCV` module from
     scikit-learn.
 2.  Next, we create a dictionary of possible values for the
-    hyperparameters and store it as `grid_params`{.literal}.
-3.  Finally, we create a `GridSearchCV`{.literal} object with the
+    hyperparameters and store it as `grid_params`.
+3.  Finally, we create a `GridSearchCV` object with the
     decision tree classifier as the estimator; that is, the dictionary
     of hyperparameter values.
-4.  We set the `scoring`{.literal} argument as `accuracy`{.literal},
+4.  We set the `scoring` argument as `accuracy`,
     since we want to extract the accuracy of the best model found by
-    `GridSearchCV`{.literal}.
+    `GridSearchCV`.
 
 We then fit this grid object to the training data using the following
 code:
@@ -343,11 +343,11 @@ from sklearn import tree
 We start by importing the required packages. The new packages here are
 the following:
 
--   `StringIO`{.literal}
--   `Image`{.literal}
--   `export_graphviz`{.literal}
--   `pydotplus`{.literal}
--   `tree`{.literal}
+-   `StringIO`
+-   `Image`
+-   `export_graphviz`
+-   `pydotplus`
+-   `tree`
 
 The installations of the packages were covered in [Chapter
 1](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781789343700/1),
@@ -400,23 +400,23 @@ Image(graph.create_png())
 
 In the preceding code, we do the following:
 
-1.  We use the `tree.export_graphviz()`{.literal} function in order to
+1.  We use the `tree.export_graphviz()` function in order to
     construct the decision tree object, and store it in a variable
-    called `data`{.literal}.
-2.  This function uses a couple of arguments: `dt`{.literal} is the
-    decision tree that you built;`out_file`{.literal} is set to
-    `None`{.literal}, as we do not want to send the tree visualization
+    called `data`.
+2.  This function uses a couple of arguments: `dt` is the
+    decision tree that you built;`out_file` is set to
+    `None`, as we do not want to send the tree visualization
     to any file outside our Jupyter Notebook; the
-    `feature_names`{.literal} are those we defined earlier; and
-    `proportion`{.literal} is, set to `True`{.literal} (this will be
+    `feature_names` are those we defined earlier; and
+    `proportion` is, set to `True` (this will be
     explained in more detail later).
 3.  We then construct a graph of the data contained within the tree so
     that we can visualize this decision tree graph by using the
-    `pydotplus. graph_from_dot_data()`{.literal} function on the
-    `data`{.literal} variable, which contains data about the decision
+    `pydotplus. graph_from_dot_data()` function on the
+    `data` variable, which contains data about the decision
     tree.
 4.  Finally, we visualize the decision tree using the
-    `Image()`{.literal} function, by passing the graph of the decision
+    `Image()` function, by passing the graph of the decision
     tree to it.
 
 This results in a decision tree like that illustrated in the following
@@ -557,7 +557,7 @@ rf_classifier.score(X_test, y_test)
 
 In the preceding code block, we do the following:
 
-1.  We first import `RandomForestClassifier`{.literal} from
+1.  We first import `RandomForestClassifier` from
     scikit-learn.
 2.  Next, we initialize a random forest classifier model.
 3.  We then fit this model to our training data, and evaluate its
@@ -600,14 +600,14 @@ rf_best = grid_object.bestestimator_
 
 In the preceding code block, we do the following:
 
-1.  We first import the `GridSearchCV`{.literal} package.
+1.  We first import the `GridSearchCV` package.
 2.  We initialize a dictionary of hyperparameter values. The
-    `max_depth`{.literal} and `min_samples_leaf`{.literal} values are
+    `max_depth` and `min_samples_leaf` values are
     similar to those of the decision tree.
-3.  However, `n_estimators`{.literal} is a new parameter, covering the
+3.  However, `n_estimators` is a new parameter, covering the
     total number of trees that you want your random forest algorithm to
     consider while making the final prediction.
-4.  We then build and fit the `gridsearch`{.literal} object to the
+4.  We then build and fit the `gridsearch` object to the
     training data and extract the optimal parameters.
 5.  The best model is then extracted using these optimal
     hyperparameters.
@@ -638,7 +638,7 @@ happens:
 
 1.  The first decision tree is built and outputs a set of predictions.
 2.  The predictions that the first decision tree got wrong are given a
-    weight of `w`{.literal}. This means that, if the weight is set to 2,
+    weight of `w`. This means that, if the weight is set to 2,
     then two instances of that particular sample are introduced into the
     dataset.
 3.  This enables decision tree 2 to learn at a faster rate, since we
@@ -699,7 +699,7 @@ ada_boost.score(X_test, y_test)
 
 In the preceding code block, we do the following:
 
-1.  We first import the `AdaBoostClassifier`{.literal} package from
+1.  We first import the `AdaBoostClassifier` package from
     scikit-learn.
 2.  Next, we initialize a decision tree that forms the base of our
     AdaBoost classifier.
@@ -746,10 +746,10 @@ ada_best = grid_object.best_estimator_
 
 In the preceding code, we do the following:
 
-1.  We first import the `GridSearchCV`{.literal} package.
+1.  We first import the `GridSearchCV` package.
 2.  We initialize a dictionary of hyperparameter values. In this case,
-    `n_estimators`{.literal} is the number of decision trees.
-3.  We then build and fit the `gridsearch`{.literal} object to the
+    `n_estimators` is the number of decision trees.
+3.  We then build and fit the `gridsearch` object to the
     training data and extract the best parameters.
 4.  The best model is then extracted using these optimal
     hyperparameters.
@@ -802,13 +802,13 @@ following:
     such a way that the target value is closest to the mean values of
     the target in that node.
 -   You will notice that, as you go down the tree to the left, along the
-    `True`{.literal} cases, the mean squared error of the nodes
+    `True` cases, the mean squared error of the nodes
     decreases.
 -   Therefore, the nodes are built in a recursive fashion, such that it
     reduces the overall mean squared error, thereby obtaining the
-    `True`{.literal} value.
+    `True` value.
 -   In the preceding tree, if the old balance of origination is less
-    than 600,281, then the amount (here, coded as `value`{.literal}) is
+    than 600,281, then the amount (here, coded as `value`) is
     80,442, and if it's greater than 600,281, then the amount is
     1,988,971.
 
@@ -841,7 +841,7 @@ target = df['amount'].values
 ```
 
 Note how, in the case of regression, the target variable is the amount,
-and not the `isFraud`{.literal} column.
+and not the `isFraud` column.
 
 Next, we split the data into training and test sets, and build the
 decision tree regressor, as shown in the following code:
@@ -872,13 +872,13 @@ In the preceding code, we do the following:
 1.  We first import the required packages and split the data into
     training and test sets.
 2.  Next, we build the decision tree regressor using the
-    `DecisionTreeRegressor()`{.literal} function.
-3.  We specify two hyperparameter arguments: `max_depth`{.literal},
+    `DecisionTreeRegressor()` function.
+3.  We specify two hyperparameter arguments: `max_depth`,
     which tells the algorithm how many branches the tree must have, and
-    `min_sample_leaf`{.literal}, which tells the tree about the minimum
+    `min_sample_leaf`, which tells the tree about the minimum
     number of samples that each node must have. The latter is set to
     20%, or 0.2 of the total data, in this case.
-4.  `random_state`{.literal} is set to 50 to ensure that the same tree
+4.  `random_state` is set to 50 to ensure that the same tree
     is built every time we run the code.
 5.  We then fit the tree to the training data.
 
@@ -988,10 +988,10 @@ rf_reg.fit(X_train, y_train)
 
 In the preceding code, we do the following:
 
-1.  We first import the `RandomForestRegressor`{.literal} module from
+1.  We first import the `RandomForestRegressor` module from
     scikit-learn.
 2.  We then initialize a random forest regressor object, called
-    `rf_reg`{.literal}, with a maximum depth of 10 for each decision
+    `rf_reg`, with a maximum depth of 10 for each decision
     tree, and the minimum number of data and samples in each tree as 20%
     of the total data.
 3.  We then fit the tree to the training set.
@@ -1080,7 +1080,7 @@ gb_reg.fit(X_train, y_train)
 
 In the preceding code, we do the following:
 
-1.  We first import `GradientBoostingRegressor`{.literal} from
+1.  We first import `GradientBoostingRegressor` from
     scikit-learn.
 2.  We the build a gradient boosted regressor object with three main
     arguments: the maximum depth of each tree, the total number of
@@ -1192,7 +1192,7 @@ voting_model.score(X_test, y_test)
 
 In the preceding code, we do the following:
 
-1.  We first import the `VotingClassifier`{.literal} module from
+1.  We first import the `VotingClassifier` module from
     scikit-learn.
 2.  Next, we create a list of all the models that we want to use in our
     voting classifier.

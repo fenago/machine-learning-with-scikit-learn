@@ -172,7 +172,7 @@ plt.title('Amount Vs. Old Balance')
 plt.show()
 ```
 
-In the preceding code, we use the `plt.scatter()`{.literal} function to
+In the preceding code, we use the `plt.scatter()` function to
 create a scatter plot between the feature* *on the *x *axis and
 the target* *on the *y *axis. This results in the scatter plot
 illustrated in the following diagram:
@@ -285,8 +285,8 @@ linear_reg.score(X_test, y_test)
 
 In the preceding code, first, we initialize a linear regression model,
 which we can then fit into the training data by using
-the `.fit()`{.literal}* *function. Then, we evaluate the accuracy score
-on the test data by using the `.score()`{.literal}* *function. This
+the `.fit()` function. Then, we evaluate the accuracy score
+on the test data by using the `.score()` function. This
 results in an accuracy score of 98%, which is fantastic!
 
 ### Scaling your data
@@ -365,16 +365,16 @@ The equation for ridge regression is as follows:
 
 In the preceding equation, the ridge loss function is equal to the
 ordinary least squares loss function, plus the product of the square of
-*Parameter1* of each feature and `alpha`{.literal}. 
+*Parameter1* of each feature and `alpha`. 
 
-`alpha`{.literal} is a parameter that we can optimize in order to
+`alpha` is a parameter that we can optimize in order to
 control the amount by which the ridge loss function penalizes the
 coefficients, in order to prevent overfitting. Obviously, if
-`alpha`{.literal} is equal to `0`{.literal}, the ridge loss function is
+`alpha` is equal to `0`, the ridge loss function is
 equal to the ordinary least squares loss function, thereby making no
 difference to the initial overfit model. 
 
-Therefore, optimizing this value of `alpha`{.literal} provides the
+Therefore, optimizing this value of `alpha` provides the
 optimal model that can generalize beyond the data that it has trained
 on. 
 
@@ -414,19 +414,19 @@ ridge_reg.score(X_test, y_test)
 
 In the preceding code, first, we read in the dataset and divide it into
 training and test sets (as usual). Next, we initialize a ridge
-regression model by using the `Ridge()`{.literal} function, with the
-parameters of `alpha`{.literal} set to `0`{.literal} and
-`normalize`{.literal} set to `True`{.literal}, in order to standardize
+regression model by using the `Ridge()` function, with the
+parameters of `alpha` set to `0` and
+`normalize` set to `True`, in order to standardize
 the data. 
 
 Next, the ridge model is fit into the training data, and the accuracy
 score is extracted from the test data. The accuracy of this model is
 exactly the same as the accuracy of the model that we built without the
 ridge regression as the parameter that controls how the model is
-optimized; `alpha`{.literal} is set to `0`{.literal}. 
+optimized; `alpha` is set to `0`. 
 
-In order to obtain the optimal value of `alpha`{.literal} with the
-`GridSearchCV`{.literal} algorithm, we use the following code:
+In order to obtain the optimal value of `alpha` with the
+`GridSearchCV` algorithm, we use the following code:
 
 ```
 from sklearn.model_selection import GridSearchCV
@@ -460,9 +460,9 @@ ridge_regression.score(X_test, y_test)
 In the preceding code, the following applies:
 
 1.  First, we initialize a ridge regression model, and then, we use the
-    `GridSearchCV`{.literal} algorithm to search for the optimal value
-    of `alpha`{.literal}, from a range of values.
-2.  After we obtain this optimal value of `alpha`{.literal}, we build a
+    `GridSearchCV` algorithm to search for the optimal value
+    of `alpha`, from a range of values.
+2.  After we obtain this optimal value of `alpha`, we build a
     new ridge regression model with this optimal value in the training
     data, and we evaluate the accuracy score on the test data. 
 
@@ -471,10 +471,10 @@ did not increase by an observable amount. However, on datasets with
 larger dimensions/features, ridge regression holds immense value for
 providing you with a model that generalizes well, without overfitting. 
 
-In order to verify the results that the `GridSearchCV`{.literal}
+In order to verify the results that the `GridSearchCV`
 algorithm has provided us with, we will construct a plot between the
 accuracy scores on the *y *axis and the different values of
-`alpha`{.literal} along the *x *axis, for both the training and test
+`alpha` along the *x *axis, for both the training and test
 data. In order to do this, we use the following code:
 
 ```
@@ -513,13 +513,13 @@ Accuracy versus alpha 
 
 In the preceding plot, it is clear that a value of 0.01 or
 lower provides the highest value of accuracy for both the training and
-test data, and therefore, the results from the `GridSearchCV`{.literal}
+test data, and therefore, the results from the `GridSearchCV`
 algorithm make logical sense. 
 
 In the preceding code, first, we initialize two empty lists, to store
 the accuracy scores for both the training and test data. We then
 evaluate the accuracy scores for both the training and test sets for
-different values of `alpha`{.literal}, and we create the preceding
+different values of `alpha`, and we create the preceding
 plot. 
 
  
@@ -532,16 +532,16 @@ The equation for lasso regression is as follows:
 
 In the preceding equation, the lasso loss function is equal to the
 ordinary least squares loss function plus the product of the absolute
-value of the coefficients of each feature and `alpha`{.literal}. 
+value of the coefficients of each feature and `alpha`. 
 
-`alpha`{.literal} is a parameter that we can optimize to control the
+`alpha` is a parameter that we can optimize to control the
 amount by which the lasso loss function penalizes the coefficients, in
-order to prevent overfitting. Once again, if `alpha`{.literal} is equal
-to `0`{.literal}, the lasso loss function is equal to the ordinary least
+order to prevent overfitting. Once again, if `alpha` is equal
+to `0`, the lasso loss function is equal to the ordinary least
 squares loss function, thereby making no difference to the initial
 overfit model. 
 
-Therefore, optimizing this value of `alpha`{.literal} provides the
+Therefore, optimizing this value of `alpha` provides the
 optimal model that generalizes well beyond the data that it has trained
 on. 
 
@@ -583,13 +583,13 @@ lasso_reg.score(X_test, y_test)
 
 The preceding code is very similar to the code that we used to build the
 ridge regression model; the only difference is
-the `Lasso()`{.literal}* *function which we use to initialize a lasso
-regression model. Additionally, the `warnings`{.literal} package is
+the `Lasso()` function which we use to initialize a lasso
+regression model. Additionally, the `warnings` package is
 used, in order to suppress the warning that is generated as we set the
-value of `alpha`{.literal} to `0`{.literal}. 
+value of `alpha` to `0`. 
 
-In order to optimize the value of `alpha`{.literal}, we use the
-`GridSearchCV`{.literal} algorithm. This is done by using the following
+In order to optimize the value of `alpha`, we use the
+`GridSearchCV` algorithm. This is done by using the following
 code:
 
 ```
@@ -621,15 +621,15 @@ lasso_regression.fit(X_train, y_train)
 lasso_regression.score(X_test, y_test)
 ```
 
-The preceding code is similar to the `alpha`{.literal}optimization that
+The preceding code is similar to the `alpha`optimization that
 we implemented for the ridge regression. Here, we use the lasso
 regression model instead of the ridge regression model.
 
  
 
-In order to verify the results of the `GridSearchCV`{.literal}
+In order to verify the results of the `GridSearchCV`
 algorithm, we construct a plot between the accuracy scores and the value
-of `alpha`{.literal} for the training and test sets. This is shown in
+of `alpha` for the training and test sets. This is shown in
 the following code:
 
 ```
@@ -670,9 +670,9 @@ Accuracy versus alpha
 
  
 
-All of the values of `alpha`{.literal} provide the same values of
+All of the values of `alpha` provide the same values of
 accuracy scores, and we can thus pick the value given to us by the
-`GridSearchCV`{.literal} algorithm. 
+`GridSearchCV` algorithm. 
 
 
 

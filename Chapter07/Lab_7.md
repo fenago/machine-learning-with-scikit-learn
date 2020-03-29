@@ -154,9 +154,9 @@ k_means = KMeans(n_clusters = 2)
 k_means.fit(df)
 ```
 
-In the preceding code, first, we import the `KMeans`{.literal} package
+In the preceding code, first, we import the `KMeans` package
 from scikit-learn and initialize a model with two clusters. We then fit
-this model to the data by using the `.fit()`{.literal}* *function. This
+this model to the data by using the `.fit()` function. This
 results in a set of labels as the output. We can extract the labels by
 using the following code:
 
@@ -175,8 +175,8 @@ mobile transaction, as follows:
 Array of labels
 
 Now that we have a set of labels, we know which cluster each transaction
-falls into. Mobile transactions that have a label of `0`{.literal} fall
-into one group, while transactions that have a label of `1`{.literal}
+falls into. Mobile transactions that have a label of `0` fall
+into one group, while transactions that have a label of `1`
 fall into the second group. 
 
 ### The optimal number of clusters
@@ -260,7 +260,7 @@ model for each cluster value in the list. Each model now produces an
 inertia, which is stored in the list that we initialized at the start of
 the code block. A simple line plot is then constructed by using the list
 of clusters along the x* *axis and the corresponding inertia values
-along the y* *axis, using `matplotlib`{.literal}. 
+along the y* *axis, using `matplotlib`. 
 
 The plot tells us that the inertia values are the lowest when the number
 of clusters is equal to 10. However, having a large number of clusters
@@ -344,7 +344,7 @@ k_means.inertia_
 ```
 
 In the preceding code, we use
-the `StandardScalar()`{.literal}* *function to scale our dataframe, and
+the `StandardScalar()` function to scale our dataframe, and
 then we build a k-means model with two clusters on the scaled data.
 After evaluating the inertia of the model, the value output is 295,000,
 which is substantially better than the value of *4.99 × 10^17^*,
@@ -448,7 +448,7 @@ pca_transform = pca_model.transform(df_scaled)
 pca_transform.shape
 ```
 
-In the preceding code, first, we import the `PCA`{.literal}* *method
+In the preceding code, first, we import the `PCA` method
 from scikit-learn. Next, we initialize a PCA* *model with five
 components. Here, we are specifying that we want the PCA to reduce the
 dataset to only the five most important features.
@@ -649,9 +649,9 @@ transformed = tsne_object.fit_transform(features)
 In the preceding code, the following applies:
 
 1.  First, we initialize the t-SNE object by using the
-    `TSNE()`{.literal}* *function.
+    `TSNE()` function.
 2.  Using the t-SNE object, we fit and transform the data in our
-    features, using the `fit_transform()`{.literal}* *method. 
+    features, using the `fit_transform()` method. 
 
 Next, we create the t-SNE visualization by using the following code:
 
@@ -772,10 +772,10 @@ Dendrogram
 In the preceding code, the following applies:
 
 1.  First, we create an array with four columns.
-2.  We then use the `linkage`{.literal} function to create the clusters.
-    Within the function, we specify the `method`{.literal} argument as
+2.  We then use the `linkage` function to create the clusters.
+    Within the function, we specify the `method` argument as
     complete, in order to indicate that we want the entire dendrogram. 
-3.  Finally, we use the `dendrogram`{.literal}* *function to create the
+3.  Finally, we use the `dendrogram` function to create the
     dendrogram with the clusters. We set the label names to the list of
     feature names that was created earlier in the code.
 
@@ -841,8 +841,8 @@ df = pd.merge(df, pd.DataFrame(target_labels), left_index=True, right_index=True
 ```
 
 Finally, we create the target labels by using
-the `predict()`{.literal}* *method, and convert it into a
-`pandas`{.literal} series. We then merge this series into the dataframe,
+the `predict()` method, and convert it into a
+`pandas` series. We then merge this series into the dataframe,
 in order to create our labeled dataset. 
 
 ### Building the decision tree
@@ -865,7 +865,7 @@ from sklearn import tree
 
 Next, we rename the target column to a name that is appropriate (when we
 merged the target labels created by the k-means algorithm, it produced
-`0`{.literal} as the default name). We can do this by using the
+`0` as the default name). We can do this by using the
 following code:
 
 ```

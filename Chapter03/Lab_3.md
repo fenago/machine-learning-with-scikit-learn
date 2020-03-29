@@ -14,7 +14,7 @@ In this chapter, you will learn about the following:
 -   How the logistic regression algorithm works mathematically
 -   Implementing and evaluating your first logistic regression algorithm
     with scikit-learn
--   Fine-tuning the hyperparameters using `GridSearchCV`{.literal}
+-   Fine-tuning the hyperparameters using `GridSearchCV`
 -   Scaling your data for a potential improvement in accuracy
 -   Interpreting the results of the model
 
@@ -55,7 +55,7 @@ hypothetical case in which we want to predict the probability that a
 particular loan will default based on the loan's interest rate. Using
 linear regression, the following equation can be constructed:
 
-`Default = (Interest Rate × x) + c`{.literal}* *
+`Default = (Interest Rate × x) + c` 
 
 In the preceding equation, *c *is the intercept and *x *is a coefficient
 that will be the output from the logistic regression model. The
@@ -63,7 +63,7 @@ intercept and the coefficient will have numeric values. For the purpose
 of this example, let's assume *c* is 5 and *x *is -0.2. The equation now
 becomes this:
 
-`Default = (Interest Rate × -0.2) + 5`{.literal}* *
+`Default = (Interest Rate × -0.2) + 5` 
 
 The equation can be represented in a two-dimensional plot using the
 following diagram: 
@@ -81,7 +81,7 @@ the equation is as follows:
 
  
 
-The logistic regression model now uses the `logit`{.literal} function to
+The logistic regression model now uses the `logit` function to
 transform this value of 3 into a probability between 0 and 1: 
 
 ![](./3_files/6a504f30-cec7-44bb-a907-2463caa3431f.png)
@@ -91,7 +91,7 @@ other words, using the logistic regression model that we just built
 mathematically, we obtained a probability of 95% that the loan would
 default if the interest rate was 10%. 
 
-After applying the `logit`{.literal} function to the linear equation,
+After applying the `logit` function to the linear equation,
 the two-dimensional plot shown previously changes to the following
 diagram: 
 
@@ -115,7 +115,7 @@ evaluate a logistic regression model for your dataset. We will be using
 the same dataset that we have already cleaned and prepared for the
 purpose of predicting whether a particular transaction was fraudulent.
 In the previous chapter, we saved this dataset as
-`fraud_detection.csv`{.literal}. The first step is to load this dataset
+`fraud_detection.csv`. The first step is to load this dataset
 into your Jupyter Notebook. This can be done by using the following
 code: 
 
@@ -162,9 +162,9 @@ logistic_regression = linear_model.LogisticRegression()
 logistic_regression.fit(X_train, y_train)
 ```
 
-In the preceding code, the `linear_model`{.literal}* *package is
-imported from `sklearn`{.literal} and is used to initialize the logistic
-regression algorithm by calling the `LogisticRegression()`{.literal}* *
+In the preceding code, the `linear_model` package is
+imported from `sklearn` and is used to initialize the logistic
+regression algorithm by calling the `LogisticRegression()` 
 method. This logistic regression algorithm is then fit into the training
 data. 
 
@@ -193,7 +193,7 @@ preceding section, it is clear that the model performs slightly better
 than random guessing. Such a model fails to provide value to us. In
 order to optimize the model, we are going to optimize the
 hyperparameters of the logistic regression model by using the
-`GridSearchCV`{.literal} algorithm that we used in the previous
+`GridSearchCV` algorithm that we used in the previous
 chapter. 
 
 The hyperparameter that is used by the logistic regression model is
@@ -234,7 +234,7 @@ inverse regularization strengths that go from 0.0001 to 10. 
 
 The number of values that you initialize in a grid object for the
 hyperparameter of a model is arbitrary. However, the more values, the
-longer it takes for `GridSearchCV`{.literal} to give you the optimal
+longer it takes for `GridSearchCV` to give you the optimal
 value of the hyperparameter, therby making the process computationally
 expensive. 
 
@@ -265,7 +265,7 @@ obtain an accuracy score of 99.6%! That's quite the improvement. 
 logistic_regression.score(X_test, y_test)
 ```
 
-One way to check whether `GridSearchCV`{.literal} is giving us accurate
+One way to check whether `GridSearchCV` is giving us accurate
 results is to plot the accuracy scores along the *y*-axis for different
 values of the inverse regularization strengths along the x-axis. This
 can be done by using the following code: 
@@ -320,7 +320,7 @@ Although the model has performed extremely well, scaling the data is
 still a useful step in building machine learning models with logistic
 regression, as it standardizes your data across the same range of
 values. In order to scale your data, we will use the same
-`StandardScaler()`{.literal}* *function that we used in the previous
+`StandardScaler()` function that we used in the previous
 chapter. This is done by using the following code: 
 
 ```
@@ -411,9 +411,9 @@ in the financial industry. 
 
 You have also learned how to build and evaluate logistic regression
 algorithms using scikit-learn, and looked at hyperparameter optimization
-using the `GridSearchCV`{.literal} algorithm. Additionally, you have
+using the `GridSearchCV` algorithm. Additionally, you have
 learned to verify whether the results provided to you by the
-`GridSearchCV`{.literal} algorithm are accurate by plotting the accuracy
+`GridSearchCV` algorithm are accurate by plotting the accuracy
 scores for different values of the hyperparameter. 
 
 Finally, you have scaled your data in order make it standardized and

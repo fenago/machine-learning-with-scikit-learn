@@ -151,10 +151,10 @@ nb_classifier.score(X_test, y_test)
 
 In the preceding code, the following applies:
 
-1.  First, we import the `GaussianNB`{.literal}* *module from
+1.  First, we import the `GaussianNB` module from
     scikit-learn
 2.  Next, we initialize a Naive Bayes classifier and store it in the
-    variable `nb_classifier`{.literal}
+    variable `nb_classifier`
 3.  Then, we fit the classifier to the training data and evaluate its
     accuracy on the test data
 
@@ -259,7 +259,7 @@ svm.score(X_test, y_test)
 
 In the preceding code, the following applies:
 
-1.  First, we import the `LinearSVC`{.literal}* *module from
+1.  First, we import the `LinearSVC` module from
     scikit-learn
 2.  Next, we initialize a linear support vector machine object with a
     random state of 50, so that the model produces the same result every
@@ -328,7 +328,7 @@ In the preceding code, the following applies:
     regularization strength value
 4.  The accuracy scores for the training and testing datasets are then
     appended to the empty lists
-5.  Using `matplotlib`{.literal}, we then create a plot between the
+5.  Using `matplotlib`, we then create a plot between the
     inverse regularization strength (along the *x *axis) and the
     accuracy scores for both the training and test sets (along
     the *y *axis)
@@ -351,7 +351,7 @@ In the preceding diagram, the following applies:
 #### Hyperparameter optimization using GridSearchCV
 
 In this section, you will learn how to optimize the inverse
-regularization strength using the `GridSearchCV`{.literal} algorithm. We
+regularization strength using the `GridSearchCV` algorithm. We
 can do this using the following code:
 
 ```
@@ -373,7 +373,7 @@ print("The best value of the inverse regularization strength is:", grid.best_par
 
 In the preceding code, the following applies:
 
-1.  First, we import the `GridSearchCV`{.literal}* *module from
+1.  First, we import the `GridSearchCV` module from
     scikit-learn
 2.  The next step is to initialize a linear support vector machine model
     with a random state of 50, in order to ensure that we obtain the
@@ -383,13 +383,13 @@ In the preceding code, the following applies:
 4.  Finally, we fit the grid of hyperparameter values to the training
     set, so that we can build multiple linear SVM models with the
     different values of the inverse regularization strength
-5.  The `GridSearchCV`{.literal} algorithm then evaluates the model that
+5.  The `GridSearchCV` algorithm then evaluates the model that
     produces the fewest generalization errors and returns the optimal
     value of the hyperparameter
 
 It's a good practice to compare and contrast the results of the
 graphical method of hyperparameter optimization with that of
-`GridSearchCV`{.literal}, in order to validate your results. 
+`GridSearchCV`, in order to validate your results. 
 
 ### Scaling the data for performance improvement
 
@@ -421,13 +421,13 @@ svm_scaled.score(X_test, y_test)
 In the preceding code, the following applies:
 
 1.  First, we import
-    the `StandardScaler`{.literal} the `Pipeline`{.literal}* *modules
+    the `StandardScaler` the `Pipeline` modules
     from scikit-learn, in order to build a scaling pipeline
 2.  We then set up the order of the pipeline, which specifies that we
-    use the `StandardScaler()`{.literal}* *function first, in order to
+    use the `StandardScaler()` function first, in order to
     scale the data and build the linear support vector machine on that
     scaled data
-3.  The `Pipeline()`{.literal}* *function is applied to the order of the
+3.  The `Pipeline()` function is applied to the order of the
     pipeline which sets up the pipeline
 4.  We then fit this pipeline to the training data and extract the
     scaled accuracy scores from the test data
@@ -448,7 +448,7 @@ machines. More specifically, you learned about the following topics:
 -   How the linear support vector machines work under the hood
 -   Implementing the linear support vector machines in scikit-learn
 -   Optimizing the inverse regularization strength, both graphically and
-    by using the `GridSearchCV`{.literal} algorithm
+    by using the `GridSearchCV` algorithm
 -   How to scale your data for a potential improvement in performance
 
 In the next chapter, you will learn about the other type of supervised
