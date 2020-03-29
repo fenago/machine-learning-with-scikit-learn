@@ -19,7 +19,7 @@ customer data, which can be found across a wide range of industries. As
 a data scientist, your job is to find groups of customers that you can
 segment and deliver targeted products and advertisements to. 
 
-In this chapter, you will learn about the following topics:
+In this lab, you will learn about the following topics:
 
 -   The k-means algorithm and how it works internally, in order to
     cluster unlabeled data
@@ -612,7 +612,7 @@ df = df.drop([0], axis = 1)
 
 Don't worry about how the preceding segment of code works for the
 moment, as this will be explained in detail in a later section within
-this chapter, when we deal with converting an unsupervised machine
+this lab, when we deal with converting an unsupervised machine
 learning problem into a supervised learning one. 
 
 Next, we will create a t-SNE object and fit that into our array of data
@@ -921,7 +921,7 @@ Summary
 
 * * * * *
 
-In this chapter, you learned about how the k-means algorithm works, in
+In this lab, you learned about how the k-means algorithm works, in
 order to cluster unlabeled data points into clusters or groups. You then
 learned how to implement the same using scikit-learn, and we expanded
 upon the feature engineering aspect of the implementation. 
@@ -932,6 +932,6 @@ a two-dimensional space. Finally, you learned how to convert an
 unsupervised machine learning problem into a supervised learning one,
 using decision trees. 
 
-In the next (and final) chapter, you will learn how to formally evaluate
+In the next (and final) lab, you will learn how to formally evaluate
 the performance of all of the machine learning algorithms that you have
 built so far!

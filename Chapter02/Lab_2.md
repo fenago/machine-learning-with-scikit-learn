@@ -4,7 +4,7 @@ Chapter 2. Predicting Categories with K-Nearest Neighbors
 ---------------------------------------------------------
 
 The **k-Nearest Neighbors** (**k-NN**) algorithm is a form of supervised
-machine learning that is used to predict categories. In this chapter,
+machine learning that is used to predict categories. In this lab,
 you will learn about the following:
 
 -   Preparing a dataset for machine learning with scikit-learn
@@ -24,16 +24,10 @@ This course's design facilitates the implementation of a robust machine
 learning pipeline for each and every algorithm mentioned in the course,
 and a Jupyter Notebook will be required. 
 
-The Jupyter Notebook can be installed on your local machine by following
-the instructions provided
-at:[ https://jupyter.org/install.html](https://jupyter.org/install.html).
-
-Alternatively, you can also work with the Jupyter Notebook in the
-browser by using: [https://jupyter.org/try](https://jupyter.org/try).
 
 ### Note
 
-Each chapter in this course comes with a pipeline that is implemented in a
+Each lab in this course comes with a pipeline that is implemented in a
 Jupyter Notebook on the official GitHub repository of this course, and as
 such, it is highly recommended that you install Jupyter Notebook on your
 local machine.
@@ -530,7 +524,7 @@ very good! 
 There are many ways of assessing and evaluating the performance of the
 classifier, and the accuracy score should not be the only way you
 evaluate the performance of your classifier. Further methods of
-evaluation will be discussed at a later stage in the chapter. 
+evaluation will be discussed at a later stage in the lab. 
 
 
 Fine-tuning the parameters of the k-NN algorithm
@@ -711,7 +705,7 @@ Summary
 
 * * * * *
 
-This chapter was fundamental in helping you prepare a dataset for
+This lab was fundamental in helping you prepare a dataset for
 machine learning with scikit-learn. You have learned about the
 constraints that are imposed when you do machine learning with
 scikit-learn and how to create a dataset that is perfect for
@@ -724,7 +718,7 @@ parameters of the algorithm using the popular `GridSearchCV`
 algorithm. Finally, you have learnt how to standardize and scale your
 data in order to optimize the performance of your model. 
 
-In the next chapter, you will learn how to classify fraudulent
+In the next lab, you will learn how to classify fraudulent
 transactions yet again with a new algorithm – the logistic regression
 algorithm!
 

@@ -9,7 +9,7 @@ algorithms in the world of machine learning, and although the word
 regression algorithm is, used to predict categories and solve
 classification machine learning problems. 
 
-In this chapter, you will learn about the following:
+In this lab, you will learn about the following:
 
 -   How the logistic regression algorithm works mathematically
 -   Implementing and evaluating your first logistic regression algorithm
@@ -106,7 +106,7 @@ In this section, you will learn how you can implement and quickly
 evaluate a logistic regression model for your dataset. We will be using
 the same dataset that we have already cleaned and prepared for the
 purpose of predicting whether a particular transaction was fraudulent.
-In the previous chapter, we saved this dataset as
+In the previous lab, we saved this dataset as
 `fraud_detection.csv`. The first step is to load this dataset
 into your Jupyter Notebook. This can be done by using the following
 code: 
@@ -186,7 +186,7 @@ than random guessing. Such a model fails to provide value to us. In
 order to optimize the model, we are going to optimize the
 hyperparameters of the logistic regression model by using the
 `GridSearchCV` algorithm that we used in the previous
-chapter. 
+lab. 
 
 The hyperparameter that is used by the logistic regression model is
 known as the inverse regularization strength. This is because we are
@@ -311,7 +311,7 @@ still a useful step in building machine learning models with logistic
 regression, as it standardizes your data across the same range of
 values. In order to scale your data, we will use the same
 `StandardScaler()` function that we used in the previous
-chapter. This is done by using the following code: 
+lab. This is done by using the following code: 
 
 ```
 from sklearn.preprocessing import StandardScaler
@@ -335,7 +335,7 @@ logistic_regression_scaled.score(X_test, y_test)
 The preceding code resulted in the improvement in the accuracy score of
 the model by 0.1%, which is good considering how the model had a very
 high accuracy score in the first place. The code is similar to the
-pipeline for scaling we built in the previous chapter for the k-NN
+pipeline for scaling we built in the previous lab for the k-NN
 algorithm, and there are no changes except for the fact that we have
 used a logistic regression model instead of the k-NN model. 
 
@@ -394,7 +394,7 @@ Summary
 
 * * * * *
 
-In this chapter, you have learned how the logistic regression model
+In this lab, you have learned how the logistic regression model
 works on a mathematical level. Although simplistic, the model proves to
 be formidable in terms of interpretability, which is highly beneficial
 in the financial industry. 
@@ -409,7 +409,7 @@ scores for different values of the hyperparameter. 
 Finally, you have scaled your data in order make it standardized and
 learned how to interpret your model on a mathematical level. 
 
-In the next chapter, you will learn how to implement tree-based
+In the next lab, you will learn how to implement tree-based
 algorithms, such as decision trees, random forests, and gradient-boosted
 trees, using scikit-learn.
 

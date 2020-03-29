@@ -167,7 +167,7 @@ straightforward:
 ### Note
 
 This course will be using Python 3.6 for all the code that is displayed
-throughout every chapter, unless mentioned otherwise.
+throughout every lab, unless mentioned otherwise.
 
 ### The pip method
 
@@ -401,7 +401,7 @@ Summary
 
 * * * * *
 
-This chapter has given you a brief introduction into what machine
+This lab has given you a brief introduction into what machine
 learning is for those of you who are just beginning your journey into
 the world of machine learning. You have learned about how scikit-learn
 fits into the context of machine learning and how you can go about
@@ -411,6 +411,6 @@ Finally, you had a brief glimpse at all the algorithms that you will
 learn to implement as you progress through this course, as well as its
 associated applications in the real world. 
 
-In the next chapter, you will learn how to implement your first
+In the next lab, you will learn how to implement your first
 algorithm – the K-Nearest Neighbors algorithm! 
 

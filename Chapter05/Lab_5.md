@@ -23,7 +23,7 @@ to predict housing prices). In fact, the linear regression algorithm can
 be applied in any field where there is a need to predict a numeric
 value, given a set of input features.
 
-In this chapter, you will learn about the following topics:
+In this lab, you will learn about the following topics:
 s
 -   The inner mechanics of the linear regression algorithm
 -   Building and evaluating your first linear regression algorithm,
@@ -671,7 +671,7 @@ Summary
 
 * * * * *
 
-In this chapter, you learned about how the linear regression algorithm
+In this lab, you learned about how the linear regression algorithm
 works internally, through key concepts such as residuals and ordinary
 least squares. You also learned how to visualize a simple linear
 regression model in two dimensions.

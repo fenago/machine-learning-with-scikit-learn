@@ -13,14 +13,14 @@ industries. Trees can be used to solve both classification- and
 regression-based problems, and have several use cases that make them the
 go-to solution!
 
-This chapter is broadly divided into the following two sections:
+This lab is broadly divided into the following two sections:
 
 -   Classification trees
 -   Regression trees
 
 Each section will cover the fundamental theory of different types of
 tree based algorithms, along with their implementation in scikit-learn.
-By the end of this chapter, you will have learned how to aggregate
+By the end of this lab, you will have learned how to aggregate
 several algorithms into an **ensemble** and have them vote on what the
 best prediction is.
 
@@ -988,7 +988,7 @@ In this section, you will learn how the gradient boosted tree is used
 for regression, and how you can implement this using scikit-learn.
 
 In the AdaBoost classifier that you learned about earlier in this
-chapter, weights are added to the examples that the classifier predicted
+lab, weights are added to the examples that the classifier predicted
 in correctly. In the gradient boosted tree, however, instead of weights,
 the residual errors are used as labels in each tree in order to make
 future predictions. This concept is illustrated for you in the following
@@ -1080,7 +1080,7 @@ Ensemble classifier
 
 * * * * *
 
-The concept of ensemble learning was explored in this chapter, when we
+The concept of ensemble learning was explored in this lab, when we
 learned about random forests, AdaBoost, andgradient boosted trees.
 However, this concept can be extended to classifiers outside of trees.
 
@@ -1196,7 +1196,7 @@ Summary
 
 * * * * *
 
-While this chapter was rather long, you have entered the world of tree
+While this lab was rather long, you have entered the world of tree
 based algorithms, and left with a wide arsenal of tools that you can
 implement in order to solve both small- and large-scale problems. To
 summarize, you have learned the following:
@@ -1208,6 +1208,6 @@ summarize, you have learned the following:
 -   How the voting classifier can be used to build a single model out of
     different models
 
-In the upcoming chapter, you will learn how you can work with data that
+In the upcoming lab, you will learn how you can work with data that
 does not have a target variable or labels, and how to perform
 unsupervised machine learning in order to solve such problems!

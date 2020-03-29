@@ -8,9 +8,9 @@ different metrics that can potentially determine how well your model is
 performing at its given task for classification, regression, and
 unsupervised machine learning algorithms. 
 
-In this chapter, we will explore how the different performance
+In this lab, we will explore how the different performance
 evaluation methods can help you to better understand your model. The
-chapter will be split into three sections, as follows:
+lab will be split into three sections, as follows:
 
 -   Performance evaluation for classification algorithms
 -   Performance evaluation for regression algorithms 
@@ -974,7 +974,7 @@ Summary
 
 * * * * *
 
-In this chapter, you learned how to evaluate the performances of the
+In this lab, you learned how to evaluate the performances of the
 three different types of machine learning algorithms: classification,
 regression, and unsupervised. 
 

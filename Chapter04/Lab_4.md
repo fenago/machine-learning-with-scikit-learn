@@ -2,13 +2,13 @@
 Chapter 4. Predicting Categories with Naive Bayes and SVMs
 ----------------------------------------------------------
 
-In this chapter, you will learn about two popular classification machine
+In this lab, you will learn about two popular classification machine
 learning algorithms: the Naive Bayes algorithm and the linear support
 vector machine. The Naive Bayes algorithm is a probabilistic model that
 predicts classes and categories, while the linear support vector machine
 uses a linear decision boundary to predict classes and categories.
 
-In this chapter, you will learn about the following topics:
+In this lab, you will learn about the following topics:
 
 -   The theoretical concept behind the Naive Bayes algorithm, explained
     in mathematical terms
@@ -428,7 +428,7 @@ Summary
 
 * * * * *
 
-This chapter introduced you to two fundamental supervised machine
+This lab introduced you to two fundamental supervised machine
 learning algorithms: the Naive Bayes algorithm and linear support vector
 machines. More specifically, you learned about the following topics:
 
@@ -441,7 +441,7 @@ machines. More specifically, you learned about the following topics:
     by using the `GridSearchCV` algorithm
 -   How to scale your data for a potential improvement in performance
 
-In the next chapter, you will learn about the other type of supervised
+In the next lab, you will learn about the other type of supervised
 machine learning algorithm, which is used to predict numeric values,
 rather than classes and categories: linear regression!
 
