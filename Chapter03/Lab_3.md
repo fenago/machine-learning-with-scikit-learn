@@ -119,9 +119,7 @@ In the previous chapter, we saved this dataset as
 into your Jupyter Notebook. This can be done by using the following
 code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 
 # Reading in the dataset 
@@ -135,9 +133,7 @@ The first step to building any machine learning model with scikit-learn
 is to split the data into training and test sets. This can be done by
 using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import train_test_split
 
 #Creating the features and target
@@ -154,9 +150,7 @@ The next step is to implement a base logistic regression classifier and
 evaluate its accuracy score. This can be done by using the following
 code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn import linear_model
 
 #Initializing an logistic regression object
@@ -177,9 +171,7 @@ data. 
 In order to extract the accuracy score, we use the following code on the
 test data: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Accuracy score of the logistic regression model
 
 logistic_regression.score(X_test, y_test)
@@ -214,9 +206,7 @@ This type of linear regression will explained in detail in [Chapter
 In order to optimize the inverse regularization strength, or **C** as it
 is called in short, we use the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Building the model with L1 penality 
 
 logistic_regression = linear_model.LogisticRegression(penalty='l1')
@@ -256,9 +246,7 @@ printed out, which in this case is 10. We can now build a new logistic
 regression model with this newly obtained optimal hyperparameter value
 by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Initializing an logistic regression object
 
 logistic_regression = linear_model.LogisticRegression(C = 10, penalty = 'l1')
@@ -271,9 +259,7 @@ logistic_regression.fit(X_train, y_train)
 Evaluating the model on the test data by using the following code, we
 obtain an accuracy score of 99.6%! That's quite the improvement. 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Accuracy score of the logistic regression model
 
 logistic_regression.score(X_test, y_test)
@@ -284,9 +270,7 @@ results is to plot the accuracy scores along the *y*-axis for different
 values of the inverse regularization strengths along the x-axis. This
 can be done by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 train_errors = []
 test_errors = []
 
@@ -339,9 +323,7 @@ values. In order to scale your data, we will use the same
 `StandardScaler()`{.literal}* *function that we used in the previous
 chapter. This is done by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
@@ -385,9 +367,7 @@ consists of coefficients for each variable and an intercept that can be
 used to explain how the model works. In order to extract the
 coefficients for each variable in the model, we use the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Printing out the coefficients of each variable 
 
 print(logistic_regression.coef_)
@@ -401,9 +381,7 @@ The coefficients are in the order in which the variables were in the
 dataset that was input into the model. In order to extract the intercept
 from the model, we use the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Printing out the intercept of the model
 
 print(logistic_regression.intercept_)

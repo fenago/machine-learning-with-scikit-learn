@@ -76,9 +76,7 @@ from: [https://www.kaggle.com/ntnu-testimon/paysim1](https://www.kaggle.com/ntn
 Once downloaded, open a new Jupyter Notebook by using the following code
 in Terminal (macOS/Linux) or Anaconda Prompt/PowerShell (Windows):
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 Jupyter Notebook
 ```
 
@@ -89,18 +87,14 @@ dataset, we will use the `pandas`{.literal}* *package in Python. You can
 install pandas by using the following code in Terminal (macOS/Linux) or
 PowerShell (Windows):
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install pandas
 ```
 
 Pandas can be installed on Windows machines in an Anaconda Prompt by
 using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install pandas
 ```
 
@@ -119,9 +113,7 @@ conda install pandas
 We can now read in the dataset into our Jupyter Notebook by using the
 following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Package Imports
 
 import pandas as pd
@@ -164,9 +156,7 @@ redundant to the machine learning process:
 We can drop these features from the dataset by using the following
 code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Dropping the redundant features
 
 df = df.drop(['nameOrig', 'nameDest', 'isFlaggedFraud'], axis = 1)
@@ -180,9 +170,7 @@ to work with a dataset of this size. In order to make our execution time
 quicker, we will reduce the size of the dataset to 20,000 rows. We can
 do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Storing the fraudulent data into a dataframe
 
 df_fraud = df[df['isFraud'] == 1]
@@ -233,9 +221,7 @@ The first step is to convert each category into a number:
 `DEBIT = 2`{.literal}, `PAYMENT = 3`{.literal},
 `TRANSFER = 4`{.literal}. We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Package Imports
 
 from sklearn.preprocessing import LabelEncoder
@@ -281,9 +267,7 @@ encode them. Since the `type`{.literal}* *column is a nominal
 categorical variable, we have to one-hot encode it after integer
 encoding it. This is done by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #One hot encoding the 'type' column
 
 type_one_hot = OneHotEncoder()
@@ -336,9 +320,7 @@ missing values. Therefore, we must check whether our dataset has any
 missing values in any of the columns to begin with. We can do this by
 using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Checking every column for missing values
 
 df.isnull().any()
@@ -374,9 +356,7 @@ achieve, we will impute all the missing values with a zero.
 
 We can do this by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Imputing the missing values with a 0
 
 df = df.fillna(0)
@@ -390,9 +370,7 @@ directory that you are working in with the Jupyter Notebook.
 
 We can do this by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 df.to_csv('fraud_prediction.csv')
 ```
 
@@ -476,9 +454,7 @@ contains two labels: 0 if the transaction is not a fraud and 1 if the
 transaction is a fraud. The features are the remaining variables. We can
 store these into two separate variables by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Creating the features 
 
 features = df.drop('isFraud', axis = 1).values
@@ -491,9 +467,7 @@ features and target variables into NumPy arrays.
 Next, we will split the features and target into training and test sets
 by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size = 0.3, random_state = 42, stratify = target)
@@ -535,9 +509,7 @@ Now that we have the training and test splits, we can implement the k-NN
 algorithm on the training sets and evaluate its score on the test sets.
 We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.neighbors import KNeighborsClassifier
 
 #Initializing the kNN classifier with 3 neighbors 
@@ -607,9 +579,7 @@ and tests its performance and determines the  optimal value of the
 parameter. We can implement the `GridSearchCV`{.literal} algorithm to
 find the optimal number of neighbors by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import numpy as np
 from sklearn.model_selection import GridSearchCV
 
@@ -707,9 +677,7 @@ called **standardization**:
 
 We can do this for our dataset by using the following code: 
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 

@@ -182,23 +182,17 @@ before you can install it. These are as follows:
 These can be installed using the pip method by using the following
 commands:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install NumPy
 ```
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install SciPy
 ```
 
 Next, we can install scikit-learn using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install scikit-learn
 ```
 
@@ -206,9 +200,7 @@ Additionally, if you already have scikit-learn installed on your device
 and you simply want to upgrade it to the latest version, you can use the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install -U scikit-learn
 ```
 
@@ -224,23 +216,17 @@ in the Anaconda prompt:
 
 The first step is to install the dependencies:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install NumPy
 ```
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install SciPy
 ```
 
 Next, we can install scikit-learn by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install scikit-learn
 ```
 
@@ -248,9 +234,7 @@ Additionally, if you already have scikit-learn installed with the
 Anaconda distribution, you can upgrade it to the latest version by using
 the following code in the Anaconda prompt:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda update scikit-learn
 ```
 
@@ -275,17 +259,13 @@ method, as follows:
 
 Pip method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install pandas
 ```
 
 Anaconda method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install pandas
 ```
 
@@ -296,17 +276,13 @@ method, as follows:
 
 Pip method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install matplotlib
 ```
 
 Anaconda method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install matplotlib
 ```
 
@@ -317,17 +293,13 @@ method, as follows:
 
 Pip method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install tree
 ```
 
 Anaconda method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install tree
 ```
 
@@ -338,17 +310,13 @@ method, as follows:
 
 Pip method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install pydotplus
 ```
 
 Anaconda method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install pydotplus
 ```
 
@@ -359,17 +327,13 @@ method, as follows:
 
 Pip method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install Image
 ```
 
 Anaconda method:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install Image
 ```
 

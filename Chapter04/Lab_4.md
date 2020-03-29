@@ -110,9 +110,7 @@ arrays, and split the data into training and test sets.
 
 We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -135,9 +133,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the Naive Bayes classifier. We can do this by
 using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.naive_bayes import GaussianNB
 
 #Initializing an NB classifier
@@ -226,9 +222,7 @@ vector machines in scikit-learn. The first step is to import the data
 and split it into training and testing sets. We can do this by using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -247,9 +241,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the linear support vector machine classifier.
 We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.svm import LinearSVC
 
 #Initializing a SVM model 
@@ -293,9 +285,7 @@ In order to optimize the inverse regularization strength, we will plot
 the accuracy scores for the training and testing sets, using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import matplotlib.pyplot as plt 
 from sklearn.svm import LinearSVC
 
@@ -364,9 +354,7 @@ In this section, you will learn how to optimize the inverse
 regularization strength using the `GridSearchCV`{.literal} algorithm. We
 can do this using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Building the model 
@@ -411,9 +399,7 @@ support vector machines. The concept of scaling remains the same as in
 the case of the previous chapters, and it will not be discussed here. In
 order to scale the data, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 

@@ -71,9 +71,7 @@ k-nearest neighbors and logistic regression. 
 The first step will be to implement both of these algorithms in the
 fraud detection dataset. We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -138,9 +136,7 @@ built using scikit-learn. 
 In order to install `scikit-plot`{.literal} on your local machine, using
 `pip`{.literal} in Terminal, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 pip3 install scikit-plot
 ```
 
@@ -148,9 +144,7 @@ If you are using the Anaconda distribution to manage your Python
 packages, you can install `scikit-plot`{.literal} by using the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 conda install -c conda-forge scikit-plot
 ```
 
@@ -193,9 +187,7 @@ best possible way. 
 In order to implement the confusion matrix in scikit-learn, we use the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.metrics import confusion_matrix
 
 #Creating predictions on the test set 
@@ -238,9 +230,7 @@ The F1-score is the weighted average of the precision and recall.
 
 We can compute the precision and recall by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.metrics import classification_report
 
 #Creating the classification report 
@@ -269,9 +259,7 @@ A **normalized confusion matrix** makes it easier for the data scientist
 to visually interpret how the labels are being predicted. In order to
 construct a normalized confusion matrix, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import matplotlib.pyplot as plt
 import scikitplot as skplt
 
@@ -298,9 +286,7 @@ K-NN model predicted 100% of the non-fraudulent transactions correctly. 
 Now, we can compare the performance of the logistic regression model by
 using a normalized confusion matrix, as follows:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Normalized confusion matrix for the logistic regression model
 
 prediction_labels = logistic_regression.predict(X_test)
@@ -325,9 +311,7 @@ The curve, in this case, is the **receiver operator characteristics**
 (**ROC**) curve. This is a plot between the true positive rate and the
 false positive rate. We can plot this curve as follows:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.metrics import roc_curve
 from sklearn.metrics import roc_auc_score
 import matplotlib.pyplot as plt
@@ -376,9 +360,7 @@ Such a curve also has the most area under the curve, as compared to the
 curves of models that have a lower accuracy. In order to compute the
 area under the curve score, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Computing the auc score 
 
 roc_auc_score(y_test, target_prob)
@@ -401,9 +383,7 @@ model that can predict a larger number of fraudulent transactions, as
 opposed to a model that cannot. In order to construct the cumulative
 gains plot for the k-nearest neighbors model, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import scikitplot as skplt
 
 target_prob = knn_classifier.predict_proba(X_test)
@@ -448,9 +428,7 @@ Now, let's compute the cumulative gains curve for the logistic
 regression model, and see if it is different. In order to do this, we
 use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Cumulative gains plot for the logistic regression model
 
 target_prob = logistic_regression.predict_proba(X_test)
@@ -480,9 +458,7 @@ predictions by using a machine learning model, as opposed to when you
 are not using one. In order to construct a lift curve for the k-nearest
 neighbor model, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 # Lift curve for the K-NN model
 
 target_prob = knn_classifier.predict_proba(X_test)
@@ -514,9 +490,7 @@ Now, we can construct the lift curve for the logistic regression model,
 in order to compare and contrast the performance of the two models. We
 can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Cumulative gains plot for the logistic regression model
 
 target_prob = logistic_regression.predict_proba(X_test)
@@ -553,9 +527,7 @@ following code:
 
  
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #KS plot for the K-NN model
 
 target_proba = knn_classifier.predict_proba(X_test)
@@ -589,9 +561,7 @@ model, in order to compare which of the two models provides a better
 distinction in predictions between the two class labels. We can do this
 by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #KS plot for the logistic regression model
 
 target_proba = logistic_regression.predict_proba(X_test)
@@ -623,9 +593,7 @@ score equal to the fraction of the positive class (in this case, the
 fraudulent transactions). In order to plot a calibration plot, we use
 the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Extracting the probabilites that the positive class will be predicted
 
 knn_proba = knn_classifier.predict_proba(X_test)
@@ -692,9 +660,7 @@ scores and the test accuracy scores vary as the number of samples/rows
 added to the data increases. In order to construct the learning curve
 for the k-nearest neighbors model, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 skplt.estimators.plot_learning_curve(knn_classifier, features, target)
 
 plt.show()
@@ -724,9 +690,7 @@ In this plot, we compare the cross-validated accuracy scores of multiple
 models by making use of box plots. In order to do so, we use the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn import model_selection
 
 #List of models
@@ -820,9 +784,7 @@ work, and how you can implement them using scikit-learn. The first step
 is to build the linear regression algorithm. We can do this by using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 ## Building a simple linear regression model
 
 #Reading in the dataset
@@ -875,9 +837,7 @@ error. 
 In order to implement the MAE in scikit-learn, we use the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn import metrics
 
 metrics.mean_absolute_error(target, predictions)
@@ -904,9 +864,7 @@ the difference. 
 In order to implement the MSE in scikit-learn, we use the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 metrics.mean_squared_error(target, predictions)
 ```
 
@@ -927,9 +885,7 @@ except for the fact that we take the square root of the MSE formula. 
 
 In order to compute the RMSE in scikit-learn, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import numpy as np
 
 np.sqrt(metrics.mean_squared_error(target, predictions))
@@ -960,9 +916,7 @@ unsupervised machine learning algorithm, such as the k-means algorithm.
 The first step is to build a simple k-means model. We can do so by using
 the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Reading in the dataset
 
 df = pd.read_csv('fraud_prediction.csv')
@@ -990,9 +944,7 @@ preceding plots. 
 
 In order to construct an elbow plot, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 skplt.cluster.plot_elbow_curve(k_means, df, cluster_ranges=range(1, 20))
 plt.show()
 ```

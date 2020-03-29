@@ -141,9 +141,7 @@ Categories with K-Nearest Neighbors*, of this book.
 The first step is to read in the dataset and define the feature and
 target variable. This can be done by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 
 #Reading in the dataset
@@ -162,9 +160,7 @@ regression model) and the old balance of the account holder along the
 *x *axis (which is the input feature). This can be done by using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import matplotlib.pyplot as plt
 
 #Creating a scatter plot
@@ -190,9 +186,7 @@ space illustrated in the preceding diagram. Note that, in the preceding
 diagram, the data is not entirely linear. In order to do this, we use
 the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Initializing a linear regression model 
 
 linear_reg = linear_model.LinearRegression()
@@ -254,9 +248,7 @@ The first step is to import our fraud prediction dataset into our
 workspace and divide it into training and test sets. This can be done by
 using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -275,9 +267,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 We can now fit the linear regression model and evaluate the initial
 accuracy score of the model by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn import linear_model
 
 #Initializing a linear regression model 
@@ -306,9 +296,7 @@ step in any linear regression pipeline, as it could offer a way to
 enhance the performance of your model. In order to scale the data, we
 use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
@@ -393,9 +381,7 @@ on. 
 In order to implement ridge regression into the fraud prediction
 dataset, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.linear_model import Ridge
 import pandas as pd
 import numpy as np
@@ -442,9 +428,7 @@ optimized; `alpha`{.literal} is set to `0`{.literal}. 
 In order to obtain the optimal value of `alpha`{.literal} with the
 `GridSearchCV`{.literal} algorithm, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Building the model 
@@ -493,9 +477,7 @@ accuracy scores on the *y *axis and the different values of
 `alpha`{.literal} along the *x *axis, for both the training and test
 data. In order to do this, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import matplotlib.pyplot as plt 
 
 train_errors = []
@@ -566,9 +548,7 @@ on. 
 In order to implement lasso regression into the fraud prediction
 dataset, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -612,9 +592,7 @@ In order to optimize the value of `alpha`{.literal}, we use the
 `GridSearchCV`{.literal} algorithm. This is done by using the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Building the model 
@@ -654,9 +632,7 @@ algorithm, we construct a plot between the accuracy scores and the value
 of `alpha`{.literal} for the training and test sets. This is shown in
 the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 train_errors = []
 test_errors = []
 

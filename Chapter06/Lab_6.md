@@ -80,9 +80,7 @@ A decision tree, in simple terms, is a set of rules that help us
 classify observations into distinct groups. In the previous diagram, the
 rule could be written as the following:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 If (value of feature is less than 50); then (put the triangles in the left-hand box and put the circles in the right-hand box).
 ```
 
@@ -182,9 +180,7 @@ classifier in scikit-learn. We will work with the same fraud detection
 dataset. The first step is to load the dataset into the Jupyter
 Notebook. We can do this by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 
 df = pd.read_csv('fraud_prediction.csv')
@@ -193,9 +189,7 @@ df = pd.read_csv('fraud_prediction.csv')
 The next step is to split the data into training and test sets. We can
 do this using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Creating the features 
 
 features = df.drop('isFraud', axis = 1).values
@@ -208,9 +202,7 @@ We can now build the initial decision tree classifier on the training
 data, and test its accuracy on the test data, by using the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.tree import DecisionTreeClassifier
 
 dt = DecisionTreeClassifier(criterion = 'gini', random_state = 50)
@@ -270,9 +262,7 @@ In order to optimize the ideal hyperparameter and to extract the best
 possible decision tree, we use the `GridSearchCV`{.literal} module from
 scikit-learn. We can set this up using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Creating a grid of different hyperparameters
@@ -305,9 +295,7 @@ In the preceding code, we do the following:
 We then fit this grid object to the training data using the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Fitting the grid to the training data
 
 grid_object.fit(X_train, y_train)
@@ -315,9 +303,7 @@ grid_object.fit(X_train, y_train)
 
 We can then extract the best set of parameters using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Extracting the best parameters
 
 grid_object.best_params_
@@ -328,9 +314,7 @@ a minimum number of samples at the leaf node of 0.02 are the best
 parameters for this data. We can use these optimal parameters and
 construct a new decision tree using thefollowingcode:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Extracting the best parameters
 
 grid_object.best_params_
@@ -344,9 +328,7 @@ using a decision tree diagram that explains how the algorithm that you
 built works. In order to visualize a simple decision tree for the fraud
 detection dataset, we use thefollowingcode:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Package requirements 
 
 import pandas as pd
@@ -374,9 +356,7 @@ The installations of the packages were covered in [Chapter
 Then, we read in the dataset and initialize a decision tree classifier,
 as shown in thefollowingcode:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Reading in the data
 
 df = pd.read_csv('fraud_prediction.csv')
@@ -395,9 +375,7 @@ dt = DecisionTreeClassifier(criterion = 'gini', random_state = 50, max_depth= 5)
 Next, we fit the tree on the features and target, and then extract the
 feature names separately:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Fitting the classifier on the data
 
 dt.fit(features, target)
@@ -409,9 +387,7 @@ feature_names = df.drop('isFraud', axis = 1)
 
 We can then visualize the decision tree using thefollowingcode:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Creating the tree visualization
 
 data = tree.export_graphviz(dt, out_file=None, feature_names= feature_names.columns.values, proportion= True)
@@ -541,9 +517,7 @@ In this section, we will implement the random forest classifier in
 scikit-learn. The first step is to read in the data, and split it into
 training and test sets. This can be done by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 
 #Reading in the dataset
@@ -565,9 +539,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the random forest classifier. We can do that
 using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.ensemble import RandomForestClassifier
 
 #Initiliazing an Random Forest Classifier with default parameters
@@ -598,9 +570,7 @@ the random forest algorithm. Since random forests are fundamentally
 based on multiple decision trees, the hyperparameters are very similar.
 In order to optimize the hyperparameters, we use the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Creating a grid of different hyperparameters
@@ -687,9 +657,7 @@ split it into training and testing sets.
 
 This can be done with the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Reading in the dataset
 
 df = pd.read_csv('fraud_prediction.csv')
@@ -709,9 +677,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the AdaBoost classifier. We can do this using
 the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.ensemble import AdaBoostClassifier
 
 #Initialize a tree (Decision Tree with max depth = 1)
@@ -752,9 +718,7 @@ interest—the number of base estimators, or decision trees.
 We can optimize the hyperparameters of the AdaBoost classifier using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import GridSearchCV
 
 #Creating a grid of hyperparameters
@@ -859,9 +823,7 @@ regressor in scikit-learn. The first step is to import the data, and
 create the features and target variables. We can do this using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 
 #Reading in the dataset
@@ -884,9 +846,7 @@ and not the `isFraud`{.literal} column.
 Next, we split the data into training and test sets, and build the
 decision tree regressor, as shown in the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 
@@ -932,9 +892,7 @@ be shown the value of the target variable.
 We can visualize the decision tree regressor by using the following
 code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 #Package requirements 
 
 from sklearn.tree import DecisionTreeClassifier
@@ -987,9 +945,7 @@ regressor in scikit-learn. The first step is to import the data and
 split it into training and testing sets. This can be done using the
 following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -1014,9 +970,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the random forest regressor. We can do this
 using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.ensemble import RandomForestRegressor
 
 #Initiliazing an Random Forest Regressor with default parameters
@@ -1087,9 +1041,7 @@ regressor in scikit-learn. The first step, as usual, is to import the
 dataset, define the features and target arrays, and split the data into
 training and test sets. This can be done using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -1114,9 +1066,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size 
 The next step is to build the gradient boosted regressor. This can be
 done using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.ensemble import GradientBoostingRegressor
 
 #Initializing an Gradient Boosted Regressor with default parameters
@@ -1176,9 +1126,7 @@ in scikit-learn. The first step is to import the data, create the
 feature and target arrays, and create the training and testing splits.
 This can be done using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -1199,9 +1147,7 @@ Next, we will build two classifiers that include the voting classifier:
 the decision tree classifier and the random forest classifier. This can
 be done using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 
@@ -1224,9 +1170,7 @@ rf_classifier.fit(X_train, y_train)
 
 Next, we will build the voting classifier by using the following code:
 
-Copy
-
-``` {.programlisting .language-markup}
+```
 from sklearn.ensemble import VotingClassifier
 
 #Creating a list of models
