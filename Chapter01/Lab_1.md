@@ -1,5 +1,5 @@
 
-Chapter 1. Introducing Machine Learning with scikit-learn
+ Lab 1. Introducing Machine Learning with scikit-learn
 ---------------------------------------------------------
 
 Welcome to the world of machine learning with scikit-learn. I'm thrilled

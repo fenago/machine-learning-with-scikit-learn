@@ -1,6 +1,6 @@
 
 
-Chapter 2. Predicting Categories with K-Nearest Neighbors
+ Lab 2. Predicting Categories with K-Nearest Neighbors
 ---------------------------------------------------------
 
 The **k-Nearest Neighbors** (**k-NN**) algorithm is a form of supervised

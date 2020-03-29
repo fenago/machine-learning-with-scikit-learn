@@ -1,6 +1,6 @@
 
 
-Chapter 3. Predicting Categories with Logistic Regression
+ Lab 3. Predicting Categories with Logistic Regression
 ---------------------------------------------------------
 
 The logistic regression algorithm is one of the most interpretable

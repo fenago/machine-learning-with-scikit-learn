@@ -1,5 +1,5 @@
 
-Chapter 8. Performance Evaluation Methods
+ Lab 8. Performance Evaluation Methods
 -----------------------------------------
 
 Your method of performance evaluation will vary by the type of machine

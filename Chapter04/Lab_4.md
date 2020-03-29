@@ -1,5 +1,5 @@
 
-Chapter 4. Predicting Categories with Naive Bayes and SVMs
+ Lab 4. Predicting Categories with Naive Bayes and SVMs
 ----------------------------------------------------------
 
 In this lab, you will learn about two popular classification machine
