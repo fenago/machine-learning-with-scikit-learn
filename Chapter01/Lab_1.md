@@ -367,12 +367,12 @@ algorithms are as follows:
 -   **Logistic regression**: The logistic learning algorithm is a
     popular classification algorithm that is especially used in the
     credit industry in order to predict loan defaults
--   **k-Nearest Neighbors**:** **The k-NN algorithm is a classification
+-   **k-Nearest Neighbors**: The k-NN algorithm is a classification
     algorithm that is used to classify data into two or more categories,
     and is widely used to classify houses into expensive and affordable
     categories based on price, area, bedrooms, and a whole range of
     other features
--   **Support vector machines**:** **The SVM algorithm is a popular
+-   **Support vector machines**: The SVM algorithm is a popular
     classification algorithm that is used in image and face detection,
     along with applications such as handwriting recognition
 -   **Tree-Based algorithms: **Tree-based algorithms such as decision
@@ -388,7 +388,7 @@ Unsupervised machine learning algorithms are typically used to cluster
 points of data based on distance. The unsupervised learning algorithm
 that you will learn about in this course is as follows:
 
--   **k-means**:** **The k-means algorithm is a popular algorithm that
+-   **k-means**: The k-means algorithm is a popular algorithm that
     is typically used to segment customers into unique categories based
     on a variety of features, such as their spending habits. This
     algorithm is also used to segment houses into categories based on

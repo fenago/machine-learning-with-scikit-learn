@@ -49,26 +49,26 @@ Bayes theorem formula
 
 We can split the preceding algorithm into the following components: 
 
--   **p(h|D)**:** **This is the probability of a hypothesis taking
+-   **p(h|D)**: This is the probability of a hypothesis taking
     place, provided that we have a dataset. An example of this would be
     the probability of a fraudulent transaction taking place, provided
     that we had a dataset that consisted of fraudulent and
     non-fraudulent transactions. 
--   **p(D|h)**:** **This is the probability of having the data, given a
+-   **p(D|h)**: This is the probability of having the data, given a
     hypothesis. An example of this would be the probability of having a
     dataset that contained fraudulent transactions. 
--   **p(h)**:** **This is the probability of a hypothesis taking place,
+-   **p(h)**: This is the probability of a hypothesis taking place,
     in general. An example of this would be a statement that the average
     probability of fraudulent transactions taking place in the mobile
     industry is 2%. 
--   **p(D)**:** **This is the probability of having the data before
+-   **p(D)**: This is the probability of having the data before
     knowing any hypothesis. An example of this would be the probability
     that a dataset of mobile transactions could be found without knowing
     what we wanted to do with it (for example, predict fraudulent mobile
     transactions).
 
-In the preceding formula, the *p(D)*** **can be rewritten in terms
-of *p(h)* and *p(D|h),*** **as follows:
+In the preceding formula, the *p(D)* can be rewritten in terms
+of *p(h)* and *p(D|h),* as follows:
 
 ![](./images_4/cbf71d5d-fc0f-42df-b96b-04c2ffca9f97.png)
 

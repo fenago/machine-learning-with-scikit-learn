@@ -482,7 +482,7 @@ variable:
 -   **Random sampling**: Randomly puts target labels into training and
     test sets (`y_train` and `y_test` in the
     preceding case).
--   **Stratified sampling**:** **Ensures that the target labels are
+-   **Stratified sampling**: Ensures that the target labels are
     represented adequately in the training and test sets. In the
     preceding code, the *stratify* argument has been set to the target
     labels to ensure that this happens.   

@@ -36,14 +36,14 @@ It is key for you to understand why we need to evaluate the performance
 of a model in the first place. Some of the potential reasons why
 performance evaluation is critical are as follows:
 
--   **It prevents overfitting**:** **Overfitting occurs when your
+-   **It prevents overfitting**: Overfitting occurs when your
     algorithm hugs the data too tightly and makes predictions that are
     specific to only one dataset. In other words, your model cannot
     generalize its predictions outside of the data that it was trained
     on.
--   **It prevents underfitting**:** **This is the exact opposite of
+-   **It prevents underfitting**: This is the exact opposite of
     overfitting. In this case, the model is very generic in nature.
--   **Understanding predictions**:** **Performance evaluation methods
+-   **Understanding predictions**: Performance evaluation methods
     will help you to understand, in greater detail, how your model makes
     predictions, along with the nature of those predictions and other
     useful information, such as the accuracy of your model. 
