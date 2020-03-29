@@ -53,7 +53,7 @@ way or another.
 Despite being naive, the algorithm does well in actual practice. The
 formula for the Bayes theorem is as follows:
 
-![](./3_files/b6ecedb4-67b5-4237-9b49-2216d121aa6f.png)
+![](./images_4/b6ecedb4-67b5-4237-9b49-2216d121aa6f.png)
 
 Bayes theorem formula
 
@@ -80,7 +80,7 @@ We can split the preceding algorithm into the following components: 
 In the preceding formula, the *p(D)*** **can be rewritten in terms
 of *p(h)* and *p(D|h),*** **as follows:
 
-![](./3_files/cbf71d5d-fc0f-42df-b96b-04c2ffca9f97.png)
+![](./images_4/cbf71d5d-fc0f-42df-b96b-04c2ffca9f97.png)
 
  
 
@@ -179,7 +179,7 @@ In order to understand support vector machines, you will need to know
 what support vectors are. They are illustrated for you in the following
 diagram:
 
-![](./4_files/67c9f7ac-654f-473b-a27b-60736fe6d5d2.png)
+![](./images_4/67c9f7ac-654f-473b-a27b-60736fe6d5d2.png)
 
 The concept of support vectors
 
@@ -202,7 +202,7 @@ In the preceding diagram, the following applies:
 In order to understand how the linear support vector machines work,
 consider the following diagram:
 
-![](./4_files/012c9c09-0e1b-4650-8895-4e7c6698e744.png)
+![](./images_4/012c9c09-0e1b-4650-8895-4e7c6698e744.png)
 
 Concept of max-margins
 
@@ -335,7 +335,7 @@ In the preceding code, the following applies:
 
 This will produce a plot as shown in the following diagram:
 
-![](./4_files/00dee480-25d6-4806-b17a-caa10ffd001a.png)
+![](./images_4/00dee480-25d6-4806-b17a-caa10ffd001a.png)
 
 Graphical hyperparameter optimization 
 

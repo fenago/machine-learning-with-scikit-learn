@@ -129,7 +129,7 @@ df.head()
 
 This produces an output as illustrated in the following screenshot: 
 
-![](./3_files/6a674e0e-134e-4e32-b21e-146444f99900.png)
+![](./images_2/6a674e0e-134e-4e32-b21e-146444f99900.png)
 
 ### Dropping features that are redundant
 
@@ -311,7 +311,7 @@ The ordinal `type` column is then dropped from the dataframe
 as this column is now redundant post one hot encoding. The final
 dataframe now looks like this:
 
-![](./3_files/5c4a588d-5eb4-40b4-a7eb-23e2252045dd.png)
+![](./images_2/5c4a588d-5eb4-40b4-a7eb-23e2252045dd.png)
 
 ### Missing values
 
@@ -328,7 +328,7 @@ df.isnull().any()
 
 This produces this output: 
 
-![](./3_files/893aa444-e820-4d5f-b7f5-c22e1161c58f.png)
+![](./images_2/893aa444-e820-4d5f-b7f5-c22e1161c58f.png)
 
 Here we note that every column has some amount of missing values. 
 
@@ -389,7 +389,7 @@ Mathematically speaking, the k-NN algorithm is one of the most simple
 machine learning algorithms out there. See the following diagram for a
 visual overview of how it works: 
 
-![](./4_files/5feaff94-0640-4387-8ca3-8fcc9f309adf.png)
+![](./images_2/5feaff94-0640-4387-8ca3-8fcc9f309adf.png)
 
 How k-NN works under the hood
 
@@ -627,7 +627,7 @@ testing and have not left out any part of the data. 
 
 Cross-validation is illustrated for you in the following diagram: 
 
-![](./6_files/8c8120e6-4aeb-4917-8f03-0ae724654d7b.png)
+![](./images_2/8c8120e6-4aeb-4917-8f03-0ae724654d7b.png)
 
 Cross-validation in action
 
@@ -673,7 +673,7 @@ One way to do this is to subtract each value of each feature by the mean
 of that feature and divide by the variance of that feature. This is
 called **standardization**:
 
-![](./7_files/5d3c13a5-e726-40bc-8f92-218104e38a80.png)
+![](./images_2/5d3c13a5-e726-40bc-8f92-218104e38a80.png)
 
 We can do this for our dataset by using the following code: 
 

@@ -61,7 +61,7 @@ algorithm can be written as follows:
 
 **
 
-*![](./3_files/01215421-90d3-4deb-8b53-b71e03457a6c.png)*
+*![](./images_5/01215421-90d3-4deb-8b53-b71e03457a6c.png)*
 
 In the preceding equation, the output of the model is a numeric outcome.
 In order to obtain this numeric outcome, we require that each input
@@ -72,7 +72,7 @@ So, in other words, our task is to find the values of the two parameters
 that can predict the value of the numeric outcome as accurately as
 possible. In visual terms, consider the following diagram:
 
-![](./3_files/b72ead10-8ad6-46cf-b071-bb274bdfea80.png)
+![](./images_5/b72ead10-8ad6-46cf-b071-bb274bdfea80.png)
 
 Two-dimensional plot between the target and input feature
 
@@ -94,7 +94,7 @@ function, as the name suggests, is to minimize the loss/errors as much
 as possible, so that we can obtain a line of best fit. In order to
 understand how this works, consider the following diagram:
 
-![](./3_files/28411f15-e9d0-4c17-885d-3eb7ba90d51e.png)
+![](./images_5/28411f15-e9d0-4c17-885d-3eb7ba90d51e.png)
 
 Line of best fit
 
@@ -177,7 +177,7 @@ create a scatter plot between the feature* *on the *x *axis and
 the target* *on the *y *axis. This results in the scatter plot
 illustrated in the following diagram:
 
-![](./4_files/316d48a4-cabe-4261-88cc-232b33c6ddc3.png)
+![](./images_5/316d48a4-cabe-4261-88cc-232b33c6ddc3.png)
 
 Two-dimensional space of the linear regression model
 
@@ -223,7 +223,7 @@ plt.show()
 This results in a line of best fit, as illustrated in the following
 diagram:
 
-![](./4_files/6360ec19-facb-4a13-8c17-a3e4d0a03f8b.png)
+![](./images_5/6360ec19-facb-4a13-8c17-a3e4d0a03f8b.png)
 
 Line of best fit
 
@@ -361,7 +361,7 @@ implement them into your model. 
 
 The equation for ridge regression is as follows:
 
-![](./5_files/0df9e765-3ede-409d-99f2-32db3f66e8ad.png)
+![](./images_5/0df9e765-3ede-409d-99f2-32db3f66e8ad.png)
 
 In the preceding equation, the ridge loss function is equal to the
 ordinary least squares loss function, plus the product of the square of
@@ -507,7 +507,7 @@ plt.show()
 
 This results in the following output:
 
-![](./5_files/231c95ae-e73f-49bf-84d2-4c1da66b52a1.png)
+![](./images_5/231c95ae-e73f-49bf-84d2-4c1da66b52a1.png)
 
 Accuracy versus alpha 
 
@@ -528,7 +528,7 @@ plot. 
 
 The equation for lasso regression is as follows:
 
-![](./5_files/c94ad8c7-9b07-45d5-8272-24467303f316.png)
+![](./images_5/c94ad8c7-9b07-45d5-8272-24467303f316.png)
 
 In the preceding equation, the lasso loss function is equal to the
 ordinary least squares loss function plus the product of the absolute
@@ -662,7 +662,7 @@ This results in the following output:
 
  
 
-![](./5_files/3f97e819-eba8-4c01-9cf9-ed0e129a3ca4.png)
+![](./images_5/3f97e819-eba8-4c01-9cf9-ed0e129a3ca4.png)
 
 Accuracy versus alpha
 

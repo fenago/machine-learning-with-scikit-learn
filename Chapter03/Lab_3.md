@@ -68,7 +68,7 @@ becomes this:
 The equation can be represented in a two-dimensional plot using the
 following diagram: 
 
-![](./3_files/635a868a-d1dd-42fa-af89-5bb5625b9863.png)
+![](./images_3/635a868a-d1dd-42fa-af89-5bb5625b9863.png)
 
 Assuming that the interest rate is 10%, the value of default produced by
 the equation is as follows:
@@ -84,7 +84,7 @@ the equation is as follows:
 The logistic regression model now uses the `logit` function to
 transform this value of 3 into a probability between 0 and 1: 
 
-![](./3_files/6a504f30-cec7-44bb-a907-2463caa3431f.png)
+![](./images_3/6a504f30-cec7-44bb-a907-2463caa3431f.png)
 
 After evaluating the preceding equation, we get an answer of 0.95. In
 other words, using the logistic regression model that we just built
@@ -223,7 +223,7 @@ print("The most optimal inverse regularization strength is:", grid.best_params_)
 
 This produces an output as illustrated in the following screenshot: 
 
-![](./5_files/31c7cb6f-c4dc-4272-8275-f890f9db90bc.png)
+![](./images_3/31c7cb6f-c4dc-4272-8275-f890f9db90bc.png)
 
 In the preceding code, we first initialize a logistic regression model
 with the penalty argument set to **l1**, indicating that we are using
@@ -298,7 +298,7 @@ plt.show()
 
 This results in a plot as illustrated in the following diagram: 
 
-![](./5_files/5efca546-3ee7-4bac-a1c0-cbbd50ef1210.png)
+![](./images_3/5efca546-3ee7-4bac-a1c0-cbbd50ef1210.png)
 
 From the preceding plot, it is clear that an inverse regularization
 strength of 10 provides a high value of accuracy for both the training
@@ -375,7 +375,7 @@ print(logistic_regression.coef_)
 
 This results in an output as illustrated by the following screenshot: 
 
-![](./7_files/bc5733fd-0893-4928-9f9f-2ef9ab73b128.png)
+![](./images_3/bc5733fd-0893-4928-9f9f-2ef9ab73b128.png)
 
 The coefficients are in the order in which the variables were in the
 dataset that was input into the model. In order to extract the intercept
@@ -389,14 +389,14 @@ print(logistic_regression.intercept_)
 
 This results in an output as shown in the following screenshot: 
 
-![](./7_files/54eac85a-39ed-4374-a3df-ec1e7c8a6968.png)
+![](./images_3/54eac85a-39ed-4374-a3df-ec1e7c8a6968.png)
 
 Now that we have the coefficients for each variable along with the
 intercept, we can construct an equation in the following form:
 
  
 
-![](./7_files/c8f915cf-3f6f-4a7f-9f8e-92e1ffad56d4.png)
+![](./images_3/c8f915cf-3f6f-4a7f-9f8e-92e1ffad56d4.png)
 
 
 Summary

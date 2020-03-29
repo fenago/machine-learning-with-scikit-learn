@@ -170,7 +170,7 @@ A **confusion matrix** is a performance evaluation technique that can be
 used in such cases, which do not involve a balanced dataset. The
 confusion matrix for our dataset would look as follows:
 
-![](./4_files/831ae8b3-6e3a-4222-8101-5c0a4ad5eec0.png)
+![](./images_8/831ae8b3-6e3a-4222-8101-5c0a4ad5eec0.png)
 
 Confusion matrix for fraudulent transactions 
 
@@ -201,7 +201,7 @@ print(confusion_matrix(y_test, prediction))
 
 This produces the following output:
 
-![](./4_files/32ac34ff-9400-4574-a15b-7453c01828a5.png)
+![](./images_8/32ac34ff-9400-4574-a15b-7453c01828a5.png)
 
 The confusion matrix output from our classifier for fraudulent
 transactions 
@@ -240,7 +240,7 @@ print(classification_report(y_test, prediction))
 
 This produces the following output:
 
-![](./4_files/142c1079-567f-458b-bca9-082d28b651f7.png)
+![](./images_8/142c1079-567f-458b-bca9-082d28b651f7.png)
 
 Classification report
 
@@ -272,7 +272,7 @@ plt.show()
 
 This results in the following normalized confusion matrix:
 
-![](./4_files/2f33c0ab-feb8-4418-8e9c-56b2c6427bd6.png)
+![](./images_8/2f33c0ab-feb8-4418-8e9c-56b2c6427bd6.png)
 
 Normalized confusion matrix for the K-NN model
 
@@ -296,7 +296,7 @@ plt.show()
 
 This results in the following normalized confusion matrix:
 
-![](./4_files/44ca6956-98c8-4c05-b35e-5e0e38d68e04.png)
+![](./images_8/44ca6956-98c8-4c05-b35e-5e0e38d68e04.png)
 
 Normalized confusion matrix for the logistic regression model
 
@@ -339,7 +339,7 @@ plt.show()
 
 This produces the following curve:
 
-![](./4_files/09d11506-51cd-4ef4-a95d-9604d77eae9c.png)
+![](./images_8/09d11506-51cd-4ef4-a95d-9604d77eae9c.png)
 
 ROC curve 
 
@@ -393,7 +393,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/74ec4a2a-240c-4676-94c5-f790dee06c03.png)
+![](./images_8/74ec4a2a-240c-4676-94c5-f790dee06c03.png)
 
 Cumulative gains plot for the k-nearest neighbors model
 
@@ -411,7 +411,7 @@ How do we interpret the preceding plot? We simply look for the point at
 which a certain percentage of the data contains 100% of the target
 class. This is illustrated in the following diagram:
 
-![](./4_files/b4caa494-7aa0-4e60-b9c2-baee1c30c51a.png)
+![](./images_8/b4caa494-7aa0-4e60-b9c2-baee1c30c51a.png)
 
 Point at which 100% of the target class exists 
 
@@ -438,7 +438,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/038ace2f-4368-4a0c-a024-cca439a7b2ac.png)
+![](./images_8/038ace2f-4368-4a0c-a024-cca439a7b2ac.png)
 
 Cumulative gains plot for the logistic regression model
 
@@ -468,7 +468,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/f260676a-08a7-456c-94b3-78cf1a7b0615.png)
+![](./images_8/f260676a-08a7-456c-94b3-78cf1a7b0615.png)
 
 Lift curve for the K-NN model
 
@@ -476,7 +476,7 @@ How do we interpret the preceding lift curve? We have to look for the
 point at which the curve dips. This is illustrated for you in the
 following diagram:
 
-![](./4_files/8ec7cbef-431c-4a48-b02f-116befb53685.png)
+![](./images_8/8ec7cbef-431c-4a48-b02f-116befb53685.png)
 
 Point of interest in the lift curve
 
@@ -500,7 +500,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/e81ab108-790c-4bd2-a6e3-e2bd6eadda9c.png)
+![](./images_8/e81ab108-790c-4bd2-a6e3-e2bd6eadda9c.png)
 
 Lift curve for the logistic regression model
 
@@ -537,7 +537,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/02c063e0-0ff9-4f43-b27d-f52765fbb6e6.png)
+![](./images_8/02c063e0-0ff9-4f43-b27d-f52765fbb6e6.png)
 
 K-S statistic plot for the K-NN model
 
@@ -571,7 +571,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/f08df259-4876-4b67-833d-1fbd5ac9cf30.png)
+![](./images_8/f08df259-4876-4b67-833d-1fbd5ac9cf30.png)
 
 K-S statistic plot for the logistic regression model
 
@@ -624,7 +624,7 @@ plt.show()
 
 This results in the following calibration plot:
 
-![](./4_files/998a0554-ca8a-4aa2-8298-5069e84fbfad.png)
+![](./images_8/998a0554-ca8a-4aa2-8298-5069e84fbfad.png)
 
 Calibration plot for the two models 
 
@@ -668,7 +668,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/2b6b49fe-589a-4855-81c6-46a6e34bd2ad.png)
+![](./images_8/2b6b49fe-589a-4855-81c6-46a6e34bd2ad.png)
 
 Learning curve for the K-NN model
 
@@ -730,7 +730,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/55df8d01-1a83-4dce-8eab-a75702696d44.png)
+![](./images_8/55df8d01-1a83-4dce-8eab-a75702696d44.png)
 
 Cross-validated box plot
 
@@ -816,17 +816,17 @@ predictions = linear_reg.predict(feature)
 
 The mean absolute error is given by the following formula:
 
-![](./5_files/33c56bea-c4e1-4da9-b913-a418654e84bd.png)
+![](./images_8/33c56bea-c4e1-4da9-b913-a418654e84bd.png)
 
 MAE formula
 
 In the preceding formula, 
 
-![](./5_files/3242a2a3-8697-42d5-a15e-1b54e6be57c3.png)
+![](./images_8/3242a2a3-8697-42d5-a15e-1b54e6be57c3.png)
 
  represents the true (or actual) value of the output, while the 
 
-![](./5_files/78a8729c-1f1a-43cd-beb5-79bb25c6bdac.png)
+![](./images_8/78a8729c-1f1a-43cd-beb5-79bb25c6bdac.png)
 
  hat represents the predicted output values. Therefore, by computing the
 summation of the difference between the true value and the predicted
@@ -852,7 +852,7 @@ target, and the predictions, which are the predicted outputs. 
 
 The mean squared error is given by the following formula:
 
-![](./5_files/b42c83e6-1b47-43e6-9fcc-98d05c81cf12.png)
+![](./images_8/b42c83e6-1b47-43e6-9fcc-98d05c81cf12.png)
 
 MSE formula
 
@@ -878,7 +878,7 @@ only the difference. 
 
 The root mean squared error is given by the following formula:
 
-![](./5_files/30f64614-99d6-41f1-a2b0-e8eea811c10d.png)
+![](./images_8/30f64614-99d6-41f1-a2b0-e8eea811c10d.png)
 
 The preceding formula is very similar to that of the mean squared error,
 except for the fact that we take the square root of the MSE formula. 
@@ -951,7 +951,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./6_files/4e8c2c99-8bd9-4fd2-aef4-a2122367a7d8.png)
+![](./images_8/4e8c2c99-8bd9-4fd2-aef4-a2122367a7d8.png)
 
 Elbow plot
 

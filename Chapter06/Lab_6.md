@@ -72,7 +72,7 @@ The decision tree is the simplest tree based algorithm, and serves as
 the foundation for the other two algorithms. Let's consider the
 following simple decision tree:
 
-![](./3_files/1f99278c-4182-4d1a-b104-e042c6f93ce9.png)
+![](./images_6/1f99278c-4182-4d1a-b104-e042c6f93ce9.png)
 
 A simple decision tree
 
@@ -104,7 +104,7 @@ into two or more distinct groups, depending on the number of classes or
 categories that we have in the data. Let's have a look at the following
 diagram:
 
-![](./3_files/ce6d6aaa-33fc-4e14-b705-2f86fd2db0f0.png)
+![](./images_6/ce6d6aaa-33fc-4e14-b705-2f86fd2db0f0.png)
 
 A decision tree showing a good split
 
@@ -123,7 +123,7 @@ In the preceding diagram, the following happens:
 Let's take a look at another example—this time, one in which the split
 is bad. Consider the following diagram:
 
-![](./3_files/1bf114e1-67ff-4123-9b93-e914271b7f86.png)
+![](./images_6/1bf114e1-67ff-4123-9b93-e914271b7f86.png)
 
 A decision tree with a bad split
 
@@ -146,7 +146,7 @@ the better the job that this particular feature does at splitting the
 data into distinct groups. In order to learn how to compute the Gini
 coefficient for a feature, let's consider the following diagram:
 
-![](./3_files/ce6d6aaa-33fc-4e14-b705-2f86fd2db0f0.png)
+![](./images_6/ce6d6aaa-33fc-4e14-b705-2f86fd2db0f0.png)
 
 Computing the Gini coefficient
 
@@ -157,7 +157,7 @@ In the preceding diagram, the following happens:
 3.  Therefore, the Gini for the left-hand group is (2 triangles/3 total
     data points)\^2+ (1 circle/3 total data points)\^2.
 4.  To calculate this, do the following:
-    ![](./3_files/e71b0785-d3f0-4207-ba17-9fc99937bac5.png)
+    ![](./images_6/e71b0785-d3f0-4207-ba17-9fc99937bac5.png)
     0.55.
 5.  A value of 0.55 for the Gini coefficient indicates that the root of
     this tree splits the data in such a way that each group has a
@@ -422,7 +422,7 @@ In the preceding code, we do the following:
 This results in a decision tree like that illustrated in the following
 diagram:
 
-![](./3_files/b6203ea3-7a16-4cc7-85fc-d89933eacc54.png)
+![](./images_6/b6203ea3-7a16-4cc7-85fc-d89933eacc54.png)
 
 The resultant decision tree
 
@@ -430,7 +430,7 @@ The tree might seem pretty complex to interpret at first, but it's not!
 In order to interpret this tree, let's consider the root node and the
 first two children only. This is illustrated in the following diagram:
 
-![](./3_files/58622285-a445-442c-944a-8a4a43efb88c.png)
+![](./images_6/58622285-a445-442c-944a-8a4a43efb88c.png)
 
 A snippet of the decision tree
 
@@ -467,7 +467,7 @@ a decision.
 
 Let's consider the following diagram:
 
-![](./3_files/fc7c9ae3-9124-40e5-a150-b15f450ed0a6.png)
+![](./images_6/fc7c9ae3-9124-40e5-a150-b15f450ed0a6.png)
 
 The concept of ensemble learning
 
@@ -493,7 +493,7 @@ The next step for the algorithm is to make the prediction. In order to
 better understand how the random forest algorithm makes predictions,
 consider the following diagram:
 
-![](./3_files/8f837ee0-5b91-404b-a2b1-6d9c23c70aab.png)
+![](./images_6/8f837ee0-5b91-404b-a2b1-6d9c23c70aab.png)
 
 The process of making predictions in random forests
 
@@ -629,7 +629,7 @@ will not make the same mistakes.
 The process by which the AdaBoost algorithm works is illustrated in the
 following diagram:
 
-![](./3_files/e3126163-d7d6-4584-99d6-798a12662965.png)
+![](./images_6/e3126163-d7d6-4584-99d6-798a12662965.png)
 
 An outline of the AdaBoost algorithm
 
@@ -789,7 +789,7 @@ is used to tell us about the prediction error rate.
 
 Consider the tree shown in the following diagram:
 
-![](./4_files/1e065149-da53-4321-9614-cbfe5e14c9ec.png)
+![](./images_6/1e065149-da53-4321-9614-cbfe5e14c9ec.png)
 
 An example decision tree for regression
 
@@ -920,7 +920,7 @@ The code follows the exact same methodology as that of the decision tree
 classifier, and will not be discussed in detail here. This produces a
 decision tree regressor like that in the following diagram:
 
-![](./4_files/16081b20-00db-4922-8d54-878a7df78749.png)
+![](./images_6/16081b20-00db-4922-8d54-878a7df78749.png)
 
 A visualization of the decision tree regressor
 
@@ -930,7 +930,7 @@ The random forest regressor takes the decision tree regressor as the
 base estimator, and makes predictions in a method similar to that of the
 random forest classifier, as illustrated by the following diagram:
 
-![](./4_files/382373f0-e107-446c-8dca-b177dc7a3e67.png)
+![](./images_6/382373f0-e107-446c-8dca-b177dc7a3e67.png)
 
 Making the final prediction in the random forest regressor
 
@@ -1008,7 +1008,7 @@ the residual errors are used as labels in each tree in order to make
 future predictions. This concept is illustrated for you in the following
 diagram:
 
-![](./4_files/2d9b8607-cf5d-45ca-8dfc-19f269a636d5.png)
+![](./images_6/2d9b8607-cf5d-45ca-8dfc-19f269a636d5.png)
 
 Here is what occurs in the preceding diagram:
 
@@ -1106,7 +1106,7 @@ this by using the ensemble classifier.
 This concept can be better understood with the aid of the following
 diagram:
 
-![](./5_files/b8e69d20-ec1f-495c-a8aa-40b9c448b0a5.png)
+![](./images_6/b8e69d20-ec1f-495c-a8aa-40b9c448b0a5.png)
 
 Ensemble learning with a voting classifier to predict fraud transactions
 

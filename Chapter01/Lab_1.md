@@ -62,7 +62,7 @@ learning algorithm, **X** is the set of input features, such as weight
 and age, and **Y** is the target variable with the labels *Healthy* or
 *Not Healthy*:
 
-![](./2_files/fdea04c3-d82d-4713-a493-5ea4ffcecb0c.png)
+![](./images_1/fdea04c3-d82d-4713-a493-5ea4ffcecb0c.png)
 
 Although supervised machine learning is the most common type of machine
 learning that is implemented with scikit-learn and in the industry, most
@@ -89,7 +89,7 @@ In the following simple mathematical expression, **U** is the
 unsupervised learning algorithm, while **X** is a set of input features,
 such as weight and age:
 
-![](./2_files/d9f3599d-873e-4505-bdbc-532c5b555d14.png)
+![](./images_1/d9f3599d-873e-4505-bdbc-532c5b555d14.png)
 
 Given this data, our objective is to create groups that could
 potentially be labeled as *Healthy* or *Not Healthy*. The unsupervised
@@ -99,7 +99,7 @@ two such groups are. The algorithm will then proceed to cluster these
 groups into two distinct groups, as illustrated in the following
 diagram:
 
-![](./2_files/a5ff6d35-1d6c-462a-bb77-1dac6b546ac2.png)
+![](./images_1/a5ff6d35-1d6c-462a-bb77-1dac6b546ac2.png)
 
 Clustering two groups together 
 

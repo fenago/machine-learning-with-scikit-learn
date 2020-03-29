@@ -60,7 +60,7 @@ sense. 
 
 Let's consider a set of points, as illustrated in the following diagram:
 
-![](./3_files/38754811-d2da-43b5-9b52-c27023c67987.png)
+![](./images_7/38754811-d2da-43b5-9b52-c27023c67987.png)
 
 A random set of points 
 
@@ -71,7 +71,7 @@ centroids. Assuming that we want to find two distinct clusters or
 groups, the algorithm can assign two centroids, as shown in the
 following diagram:
 
-![](./3_files/c61f2c41-10cd-407b-8966-e36870d4e048.png)
+![](./images_7/c61f2c41-10cd-407b-8966-e36870d4e048.png)
 
 Centroids, represented by stars
 
@@ -90,7 +90,7 @@ In reality, the process of grouping these points into two distinct
 clusters is not this straightforward. A visual representation of the
 process can be illustrated as follows:
 
-![](./3_files/dbe03ecd-a57d-4147-8dc5-f918d04a5a88.png)
+![](./images_7/dbe03ecd-a57d-4147-8dc5-f918d04a5a88.png)
 
 The process of assigning centroids in the k-means algorithm
 
@@ -170,7 +170,7 @@ target_labels
 The output produced by the preceding code is an array of labels for each
 mobile transaction, as follows:
 
-![](./4_files/5c758372-b7d5-44ce-b59a-0973e36bdf78.png)
+![](./images_7/5c758372-b7d5-44ce-b59a-0973e36bdf78.png)
 
 Array of labels
 
@@ -246,7 +246,7 @@ plt.show()
 
 This results in the following plot:
 
-![](./4_files/13a96356-7fe1-4de9-91b2-a109ebbf846b.png)
+![](./images_7/13a96356-7fe1-4de9-91b2-a109ebbf846b.png)
 
 Inertia as a function of the number of clusters
 
@@ -277,7 +277,7 @@ The elbow point is the point at which the rate of decrease in inertia
 values slows down. The elbow point is illustrated in the following
 diagram:
 
-![](./4_files/60b5e25a-9739-49dd-9236-e4f3c00e4b58.png)
+![](./images_7/60b5e25a-9739-49dd-9236-e4f3c00e4b58.png)
 
 Elbow point of the graph
 
@@ -389,7 +389,7 @@ plt.show()
 
 This produces the following output:
 
-![](./5_files/10b1263d-59af-4505-b459-4e3e0ce62055.png)
+![](./images_7/10b1263d-59af-4505-b459-4e3e0ce62055.png)
 
 Optimal number of clusters, post-scaling
 
@@ -415,7 +415,7 @@ correlated features and spreads their data points such that it's aligned
 across the axis, and is not correlated anymore. This process can be
 illustrated as follows:
 
-![](./5_files/706acec5-0d52-4499-9865-345c4c2dbf26.png)
+![](./images_7/706acec5-0d52-4499-9865-345c4c2dbf26.png)
 
 The process of decorrelation
 
@@ -537,7 +537,7 @@ In the preceding code, the following applies:
 
 This plot is illustrated as follows:
 
-![](./5_files/b2331b17-229f-496a-8d5b-c84771668e1b.png)
+![](./images_7/b2331b17-229f-496a-8d5b-c84771668e1b.png)
 
 Inertia values versus the numbers of principal components
 
@@ -677,7 +677,7 @@ In the preceding code, the following applies:
     were generated earlier, using the k-means algorithm. This generates
     the following plot:
 
-![](./6_files/bc061bd0-bc30-4ebc-a9ac-d267d98b44bc.png)
+![](./images_7/bc061bd0-bc30-4ebc-a9ac-d267d98b44bc.png)
 
 t-SNE visualization
 
@@ -697,7 +697,7 @@ dendrogram works, we will consider a dataset with four features. 
 In the first step, each feature in the dataset is considered to be its
 own cluster. This is illustrated in the following diagram:
 
-![](./6_files/d6888a37-96b3-4429-906c-16a9dd939f2a.png)
+![](./images_7/d6888a37-96b3-4429-906c-16a9dd939f2a.png)
 
 Each feature as a single cluster in the dendrogram
 
@@ -711,7 +711,7 @@ In this step, the algorithm merges the data points in the two closest
 features together, into one single cluster. This is illustrated in the
 following diagram:
 
-![](./6_files/9d2a346a-ad19-4226-80a9-e20420260734.png)
+![](./images_7/9d2a346a-ad19-4226-80a9-e20420260734.png)
 
 The process in which features merge into a single cluster
 
@@ -765,7 +765,7 @@ plt.show()
 The preceding code results in a dendrogram, as illustrated in the
 following diagram:
 
-![](./6_files/d3296684-f7c7-457d-ae6c-4a48b966dbb4.png)
+![](./images_7/d3296684-f7c7-457d-ae6c-4a48b966dbb4.png)
 
 Dendrogram
 
@@ -919,7 +919,7 @@ Image(graph.create_png())
 
 This results in the decision tree shown in the following diagram:
 
-![](./7_files/d07f6d3d-d67d-4d6f-804e-eac7c4c06788.png)
+![](./images_7/d07f6d3d-d67d-4d6f-804e-eac7c4c06788.png)
 
 A part of the decision tree that was created 
 
