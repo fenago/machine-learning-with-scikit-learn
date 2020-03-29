@@ -23,6 +23,19 @@ field of finance, where building interpretable machine learning models
 is key in convincing both investors and regulators alike that your model
 makes intuitive and logical sense. 
 
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+
+All Notebooks are present in `work/machine-learning-with-scikit-learn` folder.
+
+You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab3_Logistic_Regression`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 
 Technical requirements
@@ -68,10 +81,6 @@ the equation is as follows:
 *Default = (10 × -0.2) + 5*
 
 *Default = 3*
-
- 
-
- 
 
 The logistic regression model now uses the `logit` function to
 transform this value of 3 into a probability between 0 and 1: 

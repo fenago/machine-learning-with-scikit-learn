@@ -24,13 +24,28 @@ This course's design facilitates the implementation of a robust machine
 learning pipeline for each and every algorithm mentioned in the course,
 and a Jupyter Notebook will be required. 
 
-
 ### Note
 
 Each lab in this course comes with a pipeline that is implemented in a
 Jupyter Notebook on the official GitHub repository of this course, and as
 such, it is highly recommended that you install Jupyter Notebook on your
 local machine.
+
+Let's get started.
+
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+
+All Notebooks are present in `work/machine-learning-with-scikit-learn` folder.
+
+You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab2_K_Nearest_Neighbors`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
 
 
 Technical requirements
@@ -54,51 +69,29 @@ section. The dataset that we will be using is based on mobile payments
 and is found on the world's most popular competitive machine learning
 website – Kaggle.
 
-You can download the dataset
-from: [https://www.kaggle.com/ntnu-testimon/paysim1](https://www.kaggle.com/ntnu-testimon/paysim1).
+## Dataset
+Dataset is already downloaded from: [https://www.kaggle.com/ntnu-testimon/paysim1](https://www.kaggle.com/ntnu-testimon/paysim1).
 
-Once downloaded, open a new Jupyter Notebook by using the following code
-in Terminal (macOS/Linux) or Anaconda Prompt/PowerShell (Windows):
+<span style="color:red;">Extract Dataset!</span>
 
-```
-Jupyter Notebook
-```
+**Note:** Terminal is already running. You can also open new terminal by clicking:
+`File` > `New` > `Terminal`.
+
+`cd ~/work && unzip dataset.zip`
+
+`mv PS_20174392719_1491204439457_log.csv machine-learning-with-scikit-learn/Chapter02/`
 
 The fundamental goal of this dataset is to predict whether a mobile
 transaction is fraudulent. In order to do this, we need to first have a
 brief understanding of the contents of our data. In order to explore the
-dataset, we will use the `pandas` package in Python. You can
-install pandas by using the following code in Terminal (macOS/Linux) or
-PowerShell (Windows):
+dataset, we will use the `pandas` package in Python.
 
-```
-pip3 install pandas
-```
-
-Pandas can be installed on Windows machines in an Anaconda Prompt by
-using the following code:
-
-```
-conda install pandas
-```
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 We can now read in the dataset into our Jupyter Notebook by using the
 following code: 
 
 ```
-#Package Imports
+# Package Imports
 
 import pandas as pd
 

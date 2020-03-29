@@ -24,12 +24,27 @@ be applied in any field where there is a need to predict a numeric
 value, given a set of input features.
 
 In this lab, you will learn about the following topics:
-s
 -   The inner mechanics of the linear regression algorithm
 -   Building and evaluating your first linear regression algorithm,
     using scikit-learn
 -   Scaling your data for a potential performance improvement
 -   Optimizing your linear regression model
+
+
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+
+All Notebooks are present in `work/machine-learning-with-scikit-learn` folder.
+
+You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab5_Linear_Regression`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
 
 
 Technical requirements
@@ -49,8 +64,6 @@ The inner mechanics of the linear regression algorithm
 
 In its most fundamental form, the expression for the linear regression
 algorithm can be written as follows:
-
-**
 
 *![](./images_5/01215421-90d3-4deb-8b53-b71e03457a6c.png)*
 

@@ -28,6 +28,20 @@ In this lab, you will learn about the following topics:
 -   Cluster visualization 
 -   Going from unsupervised to supervised machine learning 
 
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+Notebooks are ready to run. All packages have been installed. There is no requirement for any setup.
+
+**Note:** Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. Password for jupyterLab : `1234`
+
+All Notebooks are present in `work/machine-learning-with-scikit-learn` folder.
+
+You can access jupyter lab at `<host-ip>:<port>/lab/workspaces/lab7_Unsupervised`
+
+To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
 
 
 Technical requirements
