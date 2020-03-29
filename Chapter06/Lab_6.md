@@ -34,16 +34,6 @@ You will be required to have Python 3.6 or greater, Pandas ≥
 0.23.4, Scikit-learn ≥ 0.20.0, and Matplotlib ≥ 3.0.0 installed on your
 system.
 
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_06.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_06.ipynb)[.](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_06.ipynb)
-
- 
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2SrPP7R](http://bit.ly/2SrPP7R)
-
-
 
 Classification trees
 --------------------
@@ -312,7 +302,7 @@ grid_object.best_params_
 The output of the preceding code indicates that a maximum depth of 1 and
 a minimum number of samples at the leaf node of 0.02 are the best
 parameters for this data. We can use these optimal parameters and
-construct a new decision tree using thefollowingcode:
+construct a new decision tree using the following code:
 
 ```
 #Extracting the best parameters
@@ -326,7 +316,7 @@ One of the best aspects of building and implementing a decision tree in
 order to solve problems is that it can be interpreted quite easily,
 using a decision tree diagram that explains how the algorithm that you
 built works. In order to visualize a simple decision tree for the fraud
-detection dataset, we use thefollowingcode:
+detection dataset, we use the following code:
 
 ```
 #Package requirements 
@@ -349,12 +339,10 @@ the following:
 -   `pydotplus`
 -   `tree`
 
-The installations of the packages were covered in [Chapter
-1](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781789343700/1),
-*Introducing Machine Learning with scikit-learn*.
+The installations of the packages were covered in *Introducing Machine Learning with scikit-learn*.
 
 Then, we read in the dataset and initialize a decision tree classifier,
-as shown in thefollowingcode:
+as shown in the following code:
 
 ```
 #Reading in the data
@@ -385,7 +373,7 @@ dt.fit(features, target)
 feature_names = df.drop('isFraud', axis = 1)
 ```
 
-We can then visualize the decision tree using thefollowingcode:
+We can then visualize the decision tree using the following code:
 
 ```
 #Creating the tree visualization
@@ -782,9 +770,7 @@ outcomes, just like that of the linear regression model.
 
 In the case of the decision tree regressor, we use the mean squared
 error, instead of the Gini metric, in order to determine how the tree is
-built. You will learn about the mean squared error in detail in [Chapter
-8](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781789343700/8),
-*Performance Evaluation Methods*. In a nutshell, the mean squared error
+built. You will learn about the mean squared error in detail in *Performance Evaluation Methods*. In a nutshell, the mean squared error
 is used to tell us about the prediction error rate.
 
 Consider the tree shown in the following diagram:

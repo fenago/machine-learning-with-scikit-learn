@@ -28,16 +28,6 @@ You will be required to have Python 3.6 or greater, Pandas ≥
 0.23.4, Scikit-learn ≥ 0.20.0, and Matplotlib ≥ 3.0.0 installed on your
 system.
 
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_04.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_04.ipynb)
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2COBMUj](http://bit.ly/2COBMUj)
-
- 
-
-
 The Naive Bayes algorithm 
 --------------------------
 

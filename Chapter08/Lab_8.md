@@ -24,16 +24,7 @@ Technical requirements
 
 You will be required to have Python 3.6 or greater, Pandas ≥
 0.23.4, Scikit-learn ≥ 0.20.0, NumPy ≥ 1.15.1, Matplotlib ≥ 3.0.0,
-and Scikit-plot ≥ 0.3.7installed on your system.
-
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_08.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_08.ipynb)
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2EY4nJU](http://bit.ly/2EY4nJU)
-
- 
+and Scikit-plot ≥ 0.3.7 installed on your system.
 
 
 Why is performance evaluation critical?

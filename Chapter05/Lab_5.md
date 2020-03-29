@@ -41,15 +41,6 @@ You will be required to have Python 3.6 or greater, Pandas ≥
 0.23.4, Scikit-learn ≥ 0.20.0, and Matplotlib ≥ 3.0.0 installed on your
 system.
 
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_05.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_05.ipynb)
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2Ay95cJ](http://bit.ly/2Ay95cJ)
-
-
-
 
 The inner mechanics of the linear regression algorithm
 ------------------------------------------------------
@@ -134,8 +125,7 @@ In this subsection, you will learn how to implement your first linear
 regression algorithm, in order to predict the amount of a mobile
 transaction by using one input feature: the old balance amount of the
 account holder. We will be using the same fraudulent mobile transaction
-dataset that we used in [*Chapter
-2*](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781789343700/2), *Predicting
+dataset that we used in earlier lab, *Predicting
 Categories with K-Nearest Neighbors*, of this book.
 
 The first step is to read in the dataset and define the feature and

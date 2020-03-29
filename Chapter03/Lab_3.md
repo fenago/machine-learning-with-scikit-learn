@@ -34,14 +34,6 @@ You will be required to have Python 3.6 or greater, Pandas ≥
 0.23.4, Scikit-learn ≥ 0.20.0, and Matplotlib ≥ 3.0.0  installed on your
 system.
 
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_03.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_03.ipynb)
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2DaTNgQ](http://bit.ly/2DaTNgQ)
-
-
 
 Understanding logistic regression mathematically 
 -------------------------------------------------
@@ -199,9 +191,7 @@ chapter. 
 The hyperparameter that is used by the logistic regression model is
 known as the inverse regularization strength. This is because we are
 implementing a type of linear regression known as **l1** regression.
-This type of linear regression will explained in detail in [Chapter
-5](https://subscription.packtpub.com/book/big_data_and_business_intelligence/9781789343700/5),
-*Predicting Numeric Outcomes with Linear Regression*. 
+This type of linear regression will explained in detail in *Predicting Numeric Outcomes with Linear Regression*. 
 
 In order to optimize the inverse regularization strength, or **C** as it
 is called in short, we use the following code: 

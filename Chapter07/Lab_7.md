@@ -40,14 +40,6 @@ You will be required to have Python 3.6 or greater, Pandas  ≥
 3.0.0, Pydotplus ≥ 2.0.2, Image ≥ 3.1.2, Seaborn ≥ 0.9.0, and SciPy ≥
 1.1.0 installed on your system.
 
-The code files of this chapter can be found on
-GitHub:[https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter\_07.ipynb](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_07.ipynb)[.](https://github.com/PacktPublishing/Machine-Learning-with-scikit-learn-Quick-Start-Guide/blob/master/Chapter_07.ipynb)
-
-Check out the following video to see the code in action:
-
-[http://bit.ly/2qeEJpI](http://bit.ly/2qeEJpI)
-
-
 
 The k-means algorithm
 ---------------------
