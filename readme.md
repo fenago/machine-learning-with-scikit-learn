@@ -25,23 +25,22 @@ Deploy supervised and unsupervised machine learning algorithms using scikit-lear
 
 Labs for this course are available at path shared below. Elev8ed Notebooks (powered by Jupyter) will be accessible at the port given to you by your instructor. 
 
-1. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-2. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-3. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-4. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-5. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-6. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-7. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-8. ##### 
-		* <host-ip>:<port>/lab/workspaces/
-
+1. ##### Introducing Machine Learning with scikit-learn
+		* <host-ip>:<port>/lab/workspaces/lab1_Introduction
+2. ##### Predicting Categories with K-Nearest Neighbors
+		* <host-ip>:<port>/lab/workspaces/lab2_K_Nearest_Neighbors
+3. ##### Predicting Categories with Logistic Regression
+		* <host-ip>:<port>/lab/workspaces/lab3_Logistic_Regression
+4. ##### Predicting Categories with Naive Bayes and SVMs
+		* <host-ip>:<port>/lab/workspaces/lab4_Naive_Bayes_SVMs
+5. ##### Predicting Numeric Outcomes with Linear Regression
+		* <host-ip>:<port>/lab/workspaces/lab5_Linear_Regression
+6. ##### Classification and Regression with Trees
+		* <host-ip>:<port>/lab/workspaces/lab6_Trees
+7. ##### Clustering Data with Unsupervised Machine Learning
+		* <host-ip>:<port>/lab/workspaces/lab7_Unsupervised
+8. ##### Performance Evaluation Methods
+		* <host-ip>:<port>/lab/workspaces/lab8_Evaluation
 
 ### About
 Scikit-learn is a robust machine learning library for the Python programming language. It provides a set of supervised and unsupervised learning algorithms. This course is the easiest way to learn how to deploy, optimize, and evaluate all of the important machine learning algorithms that scikit-learn provides.
