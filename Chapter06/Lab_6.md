@@ -42,7 +42,7 @@ Classification trees
 
 Classification trees are used to predict a category or class. This is
 similar to the classification algorithms that you have learned about
-previouslyin this book, such as the k-nearest neighbors algorithm or
+previously in this course, such as the k-nearest neighbors algorithm or
 logistic regression.
 
 Broadly speaking, there are three tree based algorithms that are used to

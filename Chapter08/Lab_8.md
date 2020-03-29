@@ -56,7 +56,7 @@ Performance evaluation for classification algorithms
 * * * * *
 
 In order to evaluate the performance of classification, let's consider
-the two classification algorithms that we have built in this book:
+the two classification algorithms that we have built in this course:
 k-nearest neighbors and logistic regression. 
 
 The first step will be to implement both of these algorithms in the
@@ -997,7 +997,7 @@ chapters, which gave you the quickest entry point into the wonderful
 world of machine learning with one of the world's most popular machine
 learning frameworks: scikit-learn. 
 
-In this book, you learned about the following topics:
+In this course, you learned about the following topics:
 
 -   What machine learning is (in a nutshell) and the different types and
     applications of machine learning
@@ -1010,6 +1010,6 @@ In this book, you learned about the following topics:
     as decision trees, random forests, and gradient-boosted trees
 
 I hope that you can make the best possible use of the application based
-on the knowledge that this book has given you, allowing you to solve
+on the knowledge that this course has given you, allowing you to solve
 many real-world problems by using machine learning as your tool!
 

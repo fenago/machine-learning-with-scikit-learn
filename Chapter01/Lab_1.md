@@ -3,16 +3,16 @@ Chapter 1. Introducing Machine Learning with scikit-learn
 ---------------------------------------------------------
 
 Welcome to the world of machine learning with scikit-learn. I'm thrilled
-that you have chosen this book in order to begin or further advance your
+that you have chosen this course in order to begin or further advance your
 knowledge on the vast field of machine learning. Machine learning can be
 overwhelming at times and this is partly due to the large number of
-tools that are available on the market. This book will simplify this
+tools that are available on the market. This course will simplify this
 process of tool selection down to one – scikit-learn. 
 
-If I were to tell you what this book can do for you in one sentence, it
+If I were to tell you what this course can do for you in one sentence, it
 would be this –
 
-> *The book gives you pipelines that can be implemented in order to
+> *The course gives you pipelines that can be implemented in order to
 > solve a wide range of machine learning problems*.
 
 
@@ -166,7 +166,7 @@ straightforward:
 
 ### Note
 
-This book will be using Python 3.6 for all the code that is displayed
+This course will be using Python 3.6 for all the code that is displayed
 throughout every chapter, unless mentioned otherwise.
 
 ### The pip method
@@ -206,7 +206,7 @@ pip3 install -U scikit-learn
 
 ### Note
 
-The version of scikit-learn implemented in the book is 0.19.1.
+The version of scikit-learn implemented in the course is 0.19.1.
 
 ### The Anaconda method
 
@@ -250,7 +250,7 @@ consistency. 
 
 In this section, we will talk about the packages that we will be
 installing outside of scikit-learn that will be used throughout this
-book.
+course.
 
 #### Pandas
 
@@ -343,7 +343,7 @@ Algorithms that you will learn to implement using scikit-learn
 
 * * * * *
 
-The algorithms that you will learn about in this book are broadly
+The algorithms that you will learn about in this course are broadly
 classified into the following two categories:
 
 -   Supervised learning algorithms 
@@ -354,7 +354,7 @@ classified into the following two categories:
 ### Supervised learning algorithms
 
 Supervised learning algorithms can be used to solve both classification
-and regression problems. In this book, you will learn how to implement
+and regression problems. In this course, you will learn how to implement
 some of the most popular supervised machine learning algorithms. Popular
 supervised machine learning algorithms are the ones that are widely used
 in industry and research, and have helped us solve a wide range of
@@ -386,7 +386,7 @@ algorithms are as follows:
 
 Unsupervised machine learning algorithms are typically used to cluster
 points of data based on distance. The unsupervised learning algorithm
-that you will learn about in this book is as follows:
+that you will learn about in this course is as follows:
 
 -   **k-means**:** **The k-means algorithm is a popular algorithm that
     is typically used to segment customers into unique categories based
@@ -408,7 +408,7 @@ fits into the context of machine learning and how you can go about
 installing the necessary software. 
 
 Finally, you had a brief glimpse at all the algorithms that you will
-learn to implement as you progress through this book, as well as its
+learn to implement as you progress through this course, as well as its
 associated applications in the real world. 
 
 In the next chapter, you will learn how to implement your first

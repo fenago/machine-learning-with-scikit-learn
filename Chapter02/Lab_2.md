@@ -20,8 +20,8 @@ applications for this algorithm include predicting loan defaults and
 credit-based fraud in the financial industry and predicting whether a
 patient has cancer in the healthcare industry.
 
-This book's design facilitates the implementation of a robust machine
-learning pipeline for each and every algorithm mentioned in the book,
+This course's design facilitates the implementation of a robust machine
+learning pipeline for each and every algorithm mentioned in the course,
 and a Jupyter Notebook will be required. 
 
 The Jupyter Notebook can be installed on your local machine by following
@@ -33,8 +33,8 @@ browser by using: [https://jupyter.org/try](https://jupyter.org/try).
 
 ### Note
 
-Each chapter in this book comes with a pipeline that is implemented in a
-Jupyter Notebook on the official GitHub repository of this book, and as
+Each chapter in this course comes with a pipeline that is implemented in a
+Jupyter Notebook on the official GitHub repository of this course, and as
 such, it is highly recommended that you install Jupyter Notebook on your
 local machine.
 
@@ -334,14 +334,14 @@ nature of your dataset. This process of handling features with missing
 values is called **feature engineering**.
 
 Feature engineering can be done for both categorical and numerical
-columns and would require an entire book to explain the various
+columns and would require an entire course to explain the various
 methodologies that comprise the topic. 
 
-Since this book provides you with a deep focus on the art of applying
+Since this course provides you with a deep focus on the art of applying
 the various machine learning algorithms that scikit-learn offers,
 feature engineering will not be dealt with. 
 
-So, for the purpose of aligning with the goals that this book intends to
+So, for the purpose of aligning with the goals that this course intends to
 achieve, we will impute all the missing values with a zero.
 
 We can do this by using the following code: 

@@ -126,7 +126,7 @@ regression algorithm, in order to predict the amount of a mobile
 transaction by using one input feature: the old balance amount of the
 account holder. We will be using the same fraudulent mobile transaction
 dataset that we used in earlier lab, *Predicting
-Categories with K-Nearest Neighbors*, of this book.
+Categories with K-Nearest Neighbors*, of this course.
 
 The first step is to read in the dataset and define the feature and
 target variable. This can be done by using the following code:
