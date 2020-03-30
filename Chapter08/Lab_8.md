@@ -1,5 +1,7 @@
+<img align="right" src="../logo-small.png">
 
- Lab 8. Performance Evaluation Methods
+
+Lab 8. Performance Evaluation Methods
 -----------------------------------------
 
 Your method of performance evaluation will vary by the type of machine
@@ -137,14 +139,13 @@ Some of the visualizations in this section will require a package titled
 effective, and it is used to visualize the various performance measures
 of machine learning models. It was specifically made for models that are
 built using scikit-learn. 
-
  
 
 In order to install `scikit-plot` on your local machine, using
 `pip` in Terminal, we use the following code:
 
 ```
-pip3 install scikit-plot
+sudo pip install scikit-plot
 ```
 
 If you are using the Anaconda distribution to manage your Python

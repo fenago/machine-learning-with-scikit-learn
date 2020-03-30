@@ -1,5 +1,7 @@
+<img align="right" src="../logo-small.png">
 
- Lab 7. Clustering Data with Unsupervised Machine Learning
+
+Lab 7. Clustering Data with Unsupervised Machine Learning
 -------------------------------------------------------------
 
 Most of the data that you will encounter out in the wild will not come

@@ -1,5 +1,7 @@
+<img align="right" src="../logo-small.png">
 
- Lab 6. Classification and Regression with Trees
+
+Lab 6. Classification and Regression with Trees
 ---------------------------------------------------
 
 Tree based algorithms are very popular for two reasons: they are

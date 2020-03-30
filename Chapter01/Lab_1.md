@@ -1,5 +1,6 @@
+<img align="right" src="../logo-small.png">
 
- Lab 1. Introducing Machine Learning with scikit-learn
+Lab 1. Introducing Machine Learning with scikit-learn
 ---------------------------------------------------------
 
 Welcome to the world of machine learning with scikit-learn. I'm thrilled
@@ -12,9 +13,7 @@ process of tool selection down to one – scikit-learn. 
 If I were to tell you what this course can do for you in one sentence, it
 would be this –
 
-> *The course gives you pipelines that can be implemented in order to
-> solve a wide range of machine learning problems*.
-
+> *The course gives you pipelines that can be implemented in order to solve a wide range of machine learning problems*.
 
 
 A brief introduction to machine learning
@@ -27,7 +26,7 @@ the role of unregulated artificial intelligence in society, to Mark
 Zuckerberg having a view that contradicts Musk's. 
 
 So, what exactly is machine learning? Simply put, machine learning is a
-set of**methods**that can detect patterns in data and use those patterns
+set of **methods** that can detect patterns in data and use those patterns
 to make future predictions. Machine learning has found immense value in
 a wide range of industries, ranging from finance to healthcare. This
 translates to a higher requirement of talent with the skill capital in
@@ -104,8 +103,6 @@ diagram:
 Clustering two groups together 
 
 
-
-
 What is scikit-learn?
 ---------------------
 
@@ -116,17 +113,6 @@ supervised and unsupervised machine learning problems. The software is
 built entirely in Python and utilizes some of the most popular libraries
 that Python has to offer, namely NumPy and SciPy. 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 The main reason why scikit-learn is very popular stems from the fact
 that most of the world's most popular machine learning algorithms can be
@@ -169,6 +155,8 @@ straightforward:
 This course will be using Python 3.6 for all the code that is displayed
 throughout every lab, unless mentioned otherwise.
 
+**Note:** All python packages mentioned below have been installed already. It is not required to run commands below to install packages.
+
 ### The pip method
 
 Scikit-learn requires a few packages to be installed on your device
@@ -177,23 +165,26 @@ before you can install it. These are as follows:
 -   **NumPy**: Version 1.8.2 or greater
 -   **SciPy**: Version 0.13.3 or greater
 
- 
+
+**Note:** Terminal is already running. You can also open new terminal by clicking: 
+
+`File` > `New` > `Terminal`.
 
 These can be installed using the pip method by using the following
 commands:
 
 ```
-pip3 install NumPy
+sudo pip install NumPy
 ```
 
 ```
-pip3 install SciPy
+sudo pip install SciPy
 ```
 
 Next, we can install scikit-learn using the following code:
 
 ```
-pip3 install scikit-learn
+sudo pip install scikit-learn
 ```
 
 Additionally, if you already have scikit-learn installed on your device
@@ -201,7 +192,7 @@ and you simply want to upgrade it to the latest version, you can use the
 following code:
 
 ```
-pip3 install -U scikit-learn
+sudo pip install -U scikit-learn
 ```
 
 ### Note
@@ -217,17 +208,17 @@ in the Anaconda prompt:
 The first step is to install the dependencies:
 
 ```
-conda install NumPy
+sudo conda install -y  NumPy
 ```
 
 ```
-conda install SciPy
+sudo conda install -y  SciPy
 ```
 
 Next, we can install scikit-learn by using the following code:
 
 ```
-conda install scikit-learn
+sudo conda install -y  scikit-learn
 ```
 
 Additionally, if you already have scikit-learn installed with the
@@ -260,13 +251,13 @@ method, as follows:
 Pip method:
 
 ```
-pip3 install pandas
+sudo pip install pandas
 ```
 
 Anaconda method:
 
 ```
-conda install pandas
+sudo conda install -y  pandas
 ```
 
 #### Matplotlib
@@ -277,13 +268,13 @@ method, as follows:
 Pip method:
 
 ```
-pip3 install matplotlib
+sudo pip install matplotlib
 ```
 
 Anaconda method:
 
 ```
-conda install matplotlib
+sudo conda install -y  matplotlib
 ```
 
 #### Tree
@@ -294,13 +285,13 @@ method, as follows:
 Pip method:
 
 ```
-pip3 install tree
+sudo pip install tree
 ```
 
 Anaconda method:
 
 ```
-conda install tree
+sudo conda install -y  tree
 ```
 
 #### Pydotplus
@@ -311,13 +302,13 @@ method, as follows:
 Pip method:
 
 ```
-pip3 install pydotplus
+sudo pip install pydotplus
 ```
 
 Anaconda method:
 
 ```
-conda install pydotplus
+sudo conda install -y  pydotplus
 ```
 
 #### Image
@@ -328,13 +319,13 @@ method, as follows:
 Pip method:
 
 ```
-pip3 install Image
+sudo pip install Image
 ```
 
 Anaconda method:
 
 ```
-conda install Image
+sudo conda install -y  Image
 ```
 
 
@@ -375,10 +366,10 @@ algorithms are as follows:
 -   **Support vector machines**: The SVM algorithm is a popular
     classification algorithm that is used in image and face detection,
     along with applications such as handwriting recognition
--   **Tree-Based algorithms: **Tree-based algorithms such as decision
+-   **Tree-Based algorithms**: Tree-based algorithms such as decision
     trees, Random Forests, and Boosted trees are used to solve both
     classification and regression problems
--   **Naive Bayes: **The Naive Bayes classifier is a machine learning
+-   **Naive Bayes**: The Naive Bayes classifier is a machine learning
     algorithm that uses the mathematical model of probability to solve
     classification problems
 

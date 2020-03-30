@@ -1,5 +1,7 @@
+<img align="right" src="../logo-small.png">
 
- Lab 5. Predicting Numeric Outcomes with Linear Regression
+
+Lab 5. Predicting Numeric Outcomes with Linear Regression
 -------------------------------------------------------------
 
 graph\_from\_dot\_data() function on the Linear regression is used to

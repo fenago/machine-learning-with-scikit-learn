@@ -1,3 +1,4 @@
+<img align="right" src="../logo-small.png">
 
 
  Lab 2. Predicting Categories with K-Nearest Neighbors
@@ -76,6 +77,8 @@ Dataset is already downloaded from: [https://www.kaggle.com/ntnu-testimon/paysi
 
 **Note:** Terminal is already running. You can also open new terminal by clicking:
 `File` > `New` > `Terminal`.
+
+Run the following commands in the terminal to extract dataset:
 
 `cd ~/work && unzip dataset.zip`
 
