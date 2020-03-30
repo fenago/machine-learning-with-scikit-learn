@@ -150,12 +150,9 @@ straightforward:
     scikit-learn, the pip method works best (for advanced users of
     Python)
 
-### Note
+<h3><span style="color:red;">Note:</span></h3>
 
-This course will be using Python 3.6 for all the code that is displayed
-throughout every lab, unless mentioned otherwise.
-
-**Note:** All python packages mentioned below have been installed already. It is not required to run commands below to install packages.
+All python packages mentioned below have been installed already. It is not required to run commands below to install packages.
 
 ### The pip method
 
